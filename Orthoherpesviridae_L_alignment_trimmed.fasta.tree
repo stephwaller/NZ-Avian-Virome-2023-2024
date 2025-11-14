@@ -1,0 +1,128 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=26;
+	taxlabels
+	132_k141_767_-_ORF_9__frame_1__translation[&!color=#f0351d]
+	197_k141_122204_-_ORF_2__frame_1__translation[&!color=#f0351d]
+	36_k141_587_-_ORF_4__frame_3__translation[&!color=#f0351d]
+	'AIQ80680.1_Varicellovirus_Alphaherpesvirinae_cow'
+	'AZB49187.1_Manticavirus_Gammaherpesvirinae_wombat'
+	'CAJ86578.1_Muromegalovirus_Betaherpesvirinae_mouse'
+	'NP_047983.1_Rhadinovirus_Gammaherpesvirinae_monkey'
+	'O36363.1_Macavirus_Gammaherpesvirinae_wilderbeast'
+	'P28857.1_Roseolovirus_Betaherpesvirinae_human'
+	'P28858.1_Varicellovirus_Alphaherpesvirinae_horse'
+	'Q69025.3_Quwivirus_Betaherpesvirinae_gineapig'
+	'Q6UDK1.1_Iltovirus_Alphaherpesvirinae_parrot'
+	'Q85428.1_Muromegalovirus_Betaherpesvirinae_rat'
+	'Q9QJ32.1_Roseolovirus_Betaherpesvirinae_human'
+	'QYM88453.1_Proboscivirus_Betaherpesvirinae_elephant'
+	'SCL76940.1_top_hit_Mardivirus_penguin'
+	'UTK45695.1_Percavirus_Gammaherpesvirinae_horse'
+	'WPS63791.1_top_hit_bird'[&!color=#33de44]
+	'WYM66567.1_Mardivirus_Alphaherpesvirinae_duck'
+	'YP_004940081.1_Cytomegalovirus_Betaherpesvirinae_monkey'
+	'YP_009046528.1_Mardivirus_Alphaherpesvirinae_bird'
+	'YP_009176907.1_Scutavirus_Alphaherpesvirinae_turtle'
+	'YP_009207091.1_Scutavirus_Alphaherpesvirinae_turtle'
+	'YP_009361907.1_Simplexvirus_Alphaherpesvirinae_monkey'
+	'YP_009388514.1_Bossavirus_Gammaherpesvirinae_dolphin'
+	'YP_009505330.1_Cytomegalovirus_Betaherpesvirinae_human'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (36_k141_587_-_ORF_4__frame_3__translation:0.01431,'WPS63791.1_top_hit_bird':0.008777,('Q6UDK1.1_Iltovirus_Alphaherpesvirinae_parrot':0.032124,(((((132_k141_767_-_ORF_9__frame_1__translation:0.131511,(197_k141_122204_-_ORF_2__frame_1__translation:0.190805,'SCL76940.1_top_hit_Mardivirus_penguin':0.089913)[&bootstrap=42]:0.031983)[&bootstrap=99]:0.066938,('WYM66567.1_Mardivirus_Alphaherpesvirinae_duck':0.19808,'YP_009046528.1_Mardivirus_Alphaherpesvirinae_bird':0.208703)[&bootstrap=93]:0.067185)[&bootstrap=92]:0.060877,('P28858.1_Varicellovirus_Alphaherpesvirinae_horse':0.188197,'AIQ80680.1_Varicellovirus_Alphaherpesvirinae_cow':0.202925)[&bootstrap=95]:0.065938)[&bootstrap=83]:0.049906,'YP_009361907.1_Simplexvirus_Alphaherpesvirinae_monkey':0.232773)[&bootstrap=99]:0.122576,('YP_009176907.1_Scutavirus_Alphaherpesvirinae_turtle':0.257771,('YP_009207091.1_Scutavirus_Alphaherpesvirinae_turtle':0.300376,(('AZB49187.1_Manticavirus_Gammaherpesvirinae_wombat':0.294731,(('NP_047983.1_Rhadinovirus_Gammaherpesvirinae_monkey':0.267723,('YP_009388514.1_Bossavirus_Gammaherpesvirinae_dolphin':0.237374,'UTK45695.1_Percavirus_Gammaherpesvirinae_horse':0.293258)[&bootstrap=75]:0.055473)[&bootstrap=79]:0.063899,'O36363.1_Macavirus_Gammaherpesvirinae_wilderbeast':0.334714)[&bootstrap=73]:0.075531)[&bootstrap=100]:0.329015,((((('CAJ86578.1_Muromegalovirus_Betaherpesvirinae_mouse':0.185261,'Q85428.1_Muromegalovirus_Betaherpesvirinae_rat':0.271265)[&bootstrap=100]:0.169735,('YP_004940081.1_Cytomegalovirus_Betaherpesvirinae_monkey':0.071336,'YP_009505330.1_Cytomegalovirus_Betaherpesvirinae_human':0.073139)[&bootstrap=100]:0.302472)[&bootstrap=84]:0.08195,'Q69025.3_Quwivirus_Betaherpesvirinae_gineapig':0.332199)[&bootstrap=100]:0.129947,('P28857.1_Roseolovirus_Betaherpesvirinae_human':0.014672,'Q9QJ32.1_Roseolovirus_Betaherpesvirinae_human':0.003439)[&bootstrap=100]:0.426113)[&bootstrap=100]:0.148244,'QYM88453.1_Proboscivirus_Betaherpesvirinae_elephant':0.506422)[&bootstrap=100]:0.222099)[&bootstrap=100]:0.416607)[&bootstrap=65]:0.079623)[&bootstrap=99]:0.163642)[&bootstrap=100]:0.360139)[&bootstrap=100]:0.04457);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=16;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

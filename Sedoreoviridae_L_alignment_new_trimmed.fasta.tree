@@ -1,0 +1,136 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=34;
+	taxlabels
+	104_k141_99846_-_ORF_1__frame_2__translation[&!color=#deaf59]
+	106_k141_265320_-_ORF_3__frame_3__translation[&!color=#59de62]
+	109_k141_56031_-_ORF_1__frame_1__translation[&!color=#59de62]
+	109_k141_8104_-_ORF_19__frame_3__translation[&!color=#deaf59]
+	148_k141_117810_-_ORF_1__frame_1__translation[&!color=#deaf59]
+	199_k141_126425_-_ORF_1__frame_1__translation[&!color=#eb4e4b]
+	28_k141_326138_-_ORF_1__frame_3__translation[&!color=#e070d7]
+	2_k141_14404_-_ORF_1__frame_1__translation[&!color=#e070d7]
+	78_k141_413309_-_ORF_1__frame_2__translation[&!color=#deaf59]
+	81_k141_529212_-_ORF_4__frame_3__translation[&!color=#eb4e4b]
+	84_k141_45603_-_ORF_2__frame_3__translation[&!color=#eb4e4b]
+	'AFS89485.1_goat_Rotavirus'
+	'AGA19160.1_top_hit_bird_rotavirus'
+	'AIW53350.1_top_hit_chicken_Rotavirus'
+	'AVV63162.1_sandfly_Orbivirus'
+	'AXF38701.1_top_hit_duck_Rotavirus'
+	'AXF38730.1_top_hit_bird_Rotavirus'
+	'AXL64583.1_top_hit_bird_rotavirus'
+	'AYA60740.1_top_hit_bird_rotavirus'
+	'BAS66975.1_top_hit_bird_rotavirus'
+	'BAW98463.1_cow_Rotavirus'
+	'Q02119.1_plant_Phytoreovirus'
+	'Q1I0V0.1_algae_Mimoreovirus'
+	'Q698V5.1_carb_Cardoreovirus'
+	'Q91E95.1_human_Rotavirus'
+	'QCD25260.1_yak_Oribvirus'
+	'QQD36988.1_top_hit_bird_Rotavirus'
+	'QQY96668.1_horse_Orbivirus'
+	'WPR17536.1_top_hit_bird_Rotavirus'
+	'WPS63786.1_top_hit_Rotavirus_bird'
+	'WZI48451.1_bird_Seadornavirus'
+	'YP_002790884.1_invertebrate_Phytoreovirus'
+	'YP_003896046.1_top_hit_chicken_Rotavirus'
+	'YP_460026.1_Seadornavirus'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (2_k141_14404_-_ORF_1__frame_1__translation:0.003293,28_k141_326138_-_ORF_1__frame_3__translation:2.0E-6,(('BAS66975.1_top_hit_bird_rotavirus':0.004499,'AGA19160.1_top_hit_bird_rotavirus':0.006314)[&bootstrap=89]:8.3E-4,('AYA60740.1_top_hit_bird_rotavirus':0.003165,(('AFS89485.1_goat_Rotavirus':0.115734,((((78_k141_413309_-_ORF_1__frame_2__translation:0.004721,((104_k141_99846_-_ORF_1__frame_2__translation:3.0E-6,109_k141_8104_-_ORF_19__frame_3__translation:2.0E-6)[&bootstrap=85]:3.0E-6,148_k141_117810_-_ORF_1__frame_1__translation:0.007211)[&bootstrap=91]:0.032001)[&bootstrap=100]:0.200203,((199_k141_126425_-_ORF_1__frame_1__translation:0.00359,'AXF38701.1_top_hit_duck_Rotavirus':3.0E-6)[&bootstrap=100]:0.019091,(('AIW53350.1_top_hit_chicken_Rotavirus':0.010289,'YP_003896046.1_top_hit_chicken_Rotavirus':0.021838)[&bootstrap=77]:0.010305,'AXL64583.1_top_hit_bird_rotavirus':0.037549)[&bootstrap=84]:0.010137)[&bootstrap=100]:0.228217)[&bootstrap=58]:0.062881,'WPS63786.1_top_hit_Rotavirus_bird':0.191564)[&bootstrap=100]:0.199435,('Q91E95.1_human_Rotavirus':0.432986,(((81_k141_529212_-_ORF_4__frame_3__translation:0.07152,('QQD36988.1_top_hit_bird_Rotavirus':0.16133,('AXF38730.1_top_hit_bird_Rotavirus':0.122764,((106_k141_265320_-_ORF_3__frame_3__translation:2.0E-6,109_k141_56031_-_ORF_1__frame_1__translation:0.011607)[&bootstrap=100]:0.010078,'WPR17536.1_top_hit_bird_Rotavirus':2.0E-6)[&bootstrap=100]:0.195466)[&bootstrap=85]:0.057609)[&bootstrap=87]:0.050835)[&bootstrap=66]:0.056854,'BAW98463.1_cow_Rotavirus':0.296974)[&bootstrap=100]:1.064285,(((('Q02119.1_plant_Phytoreovirus':0.230113,'YP_002790884.1_invertebrate_Phytoreovirus':0.360052)[&bootstrap=100]:1.485898,('AVV63162.1_sandfly_Orbivirus':0.23806,('QCD25260.1_yak_Oribvirus':0.249339,'QQY96668.1_horse_Orbivirus':0.385065)[&bootstrap=89]:0.120335)[&bootstrap=100]:1.706868)[&bootstrap=67]:0.187782,('Q698V5.1_carb_Cardoreovirus':0.930703,('WZI48451.1_bird_Seadornavirus':0.555937,'YP_460026.1_Seadornavirus':0.524079)[&bootstrap=100]:0.417652)[&bootstrap=100]:0.873741)[&bootstrap=55]:0.094415,'Q1I0V0.1_algae_Mimoreovirus':2.096206)[&bootstrap=100]:0.766081)[&bootstrap=100]:0.474569)[&bootstrap=81]:0.078337)[&bootstrap=100]:0.281605)[&bootstrap=96]:0.055946,84_k141_45603_-_ORF_2__frame_3__translation:0.102665)[&bootstrap=100]:0.085496)[&bootstrap=88]:0.00228)[&bootstrap=100]:0.007225);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

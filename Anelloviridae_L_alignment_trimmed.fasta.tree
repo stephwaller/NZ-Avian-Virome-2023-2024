@@ -1,0 +1,145 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=43;
+	taxlabels
+	194_k141_66218_-_ORF_3__frame_3__translation[&!color=#f0351d]
+	'AFQ32900.1_Iotatorquevirus_pig'
+	'AKM76222.1_gyrovirus_bird'
+	'DBA51485.1_top_hit_capsid_blood_fluke'[&!color=#f08a2b]
+	'P54088.2_gyrovirus_chicken'
+	'Q91PQ1.1_Deltatorquevirus'
+	'Q9DUB7.1_Zetatorquevirus_monkey'
+	'Q9DUC1.1_Epsilontorquevirus_monkey'
+	'Q9QU30.1_Betatorquevirus_human'
+	'QBM01053.1_gyrovirus_bird'
+	'QXO84992.1_Kappatorquevirus_pig'
+	'UGV34987.1_Hetorquevirus_human'
+	'WAX26406.1_Gammatorquevirus_human'
+	'WAX26412.1_Gammatorquevirus_human'
+	'WAX26426.1_Betatorquevirus_human'
+	'WAX26453.1_Alphatorquevirus_human'
+	'WBV79773.1_gyrovirus_penguin'[&!color=#f03ac5]
+	'WCS65248.1_Omicrontorquevirus_bear'
+	'WCS65885.1_Lambdatorquevirus_seal'
+	'WOK43093.1_gyrovirus_chicken'
+	'XBC19360.1_Samektorquevirus_human'
+	'XBU06715.1_Betatorquevirus_human'
+	'XCH55871.1_Alphatorquevirus_human'
+	'XLM28105.1_Aleptorquevirus_rabbit'
+	'XOD48183.1_Mutorquevirus_horse'
+	'XPO14195.1_gyrovirus_bird'
+	'YP_002640216.1_Sigmatorquevirus_sealion'
+	'YP_005454312.1_gyrovirus_human'
+	'YP_006576517.1_gryovirus_human'
+	'YP_008798238.1_gyrovirus_human'
+	'YP_008798241.1_gyrovirus_human'
+	'YP_009058903.1_Lambdatorquevirus_seal'
+	'YP_009072436.1_gyrovirus_chicken'
+	'YP_009126951.1_Alphatorquevirus_monkey'
+	'YP_009268642.1_Omegatorquevirus_gorilla'
+	'YP_009380544.1_Chitorquevirus_lemur'
+	'YP_009505748.1_Etatorquevirus_cat'
+	'YP_009553242.1_gyrovirus_bird'
+	'YP_010790318.1_Nutorquevirus_seal'
+	'YP_010796990.1_Etatorquevirus_cat'
+	'YP_010797264.1_Tettorquevirus_cat'
+	'YP_010797566.1_opossum_Xitorquevirus'
+	'YP_010797568.1_Wawtorquevirus_mouse'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (194_k141_66218_-_ORF_3__frame_3__translation:0.361083,'DBA51485.1_top_hit_capsid_blood_fluke':0.277899,('YP_009553242.1_gyrovirus_bird':0.441158,((('P54088.2_gyrovirus_chicken':0.541725,((('WOK43093.1_gyrovirus_chicken':0.018986,'YP_005454312.1_gyrovirus_human':3.0E-6)[&bootstrap=100]:0.306789,'XPO14195.1_gyrovirus_bird':0.251208)[&bootstrap=100]:0.167704,('YP_008798241.1_gyrovirus_human':0.344869,'YP_009072436.1_gyrovirus_chicken':0.484193)[&bootstrap=93]:0.158546)[&bootstrap=55]:0.104477)[&bootstrap=95]:0.124431,(('AKM76222.1_gyrovirus_bird':0.395158,'WBV79773.1_gyrovirus_penguin':0.500591)[&bootstrap=99]:0.184138,(((((((('AFQ32900.1_Iotatorquevirus_pig':0.107658,'QXO84992.1_Kappatorquevirus_pig':0.057269)[&bootstrap=100]:0.810046,'YP_010797566.1_opossum_Xitorquevirus':0.993869)[&bootstrap=75]:0.134374,'YP_009380544.1_Chitorquevirus_lemur':1.23062)[&bootstrap=44]:0.116231,('WCS65248.1_Omicrontorquevirus_bear':0.604623,('YP_010790318.1_Nutorquevirus_seal':0.746288,'YP_010797264.1_Tettorquevirus_cat':0.854016)[&bootstrap=64]:0.140034)[&bootstrap=100]:0.326922)[&bootstrap=36]:0.061802,('YP_010797568.1_Wawtorquevirus_mouse':0.983245,(('Q9DUB7.1_Zetatorquevirus_monkey':0.769457,'Q9DUC1.1_Epsilontorquevirus_monkey':0.860484)[&bootstrap=99]:0.211806,((((((('Q9QU30.1_Betatorquevirus_human':0.66999,'WAX26426.1_Betatorquevirus_human':0.657164)[&bootstrap=96]:0.139013,'XBU06715.1_Betatorquevirus_human':0.642736)[&bootstrap=96]:0.093929,'UGV34987.1_Hetorquevirus_human':0.588159)[&bootstrap=96]:0.126196,'YP_009268642.1_Omegatorquevirus_gorilla':0.525122)[&bootstrap=97]:0.095408,'XBC19360.1_Samektorquevirus_human':0.755567)[&bootstrap=76]:0.105634,('WAX26406.1_Gammatorquevirus_human':0.580423,'WAX26412.1_Gammatorquevirus_human':0.523914)[&bootstrap=98]:0.156975)[&bootstrap=98]:0.190905,('WAX26453.1_Alphatorquevirus_human':0.676872,('XCH55871.1_Alphatorquevirus_human':0.524751,'YP_009126951.1_Alphatorquevirus_monkey':0.602336)[&bootstrap=96]:0.099702)[&bootstrap=99]:0.152029)[&bootstrap=99]:0.225113)[&bootstrap=84]:0.269155)[&bootstrap=60]:0.17179)[&bootstrap=41]:0.177781,'XOD48183.1_Mutorquevirus_horse':1.329949)[&bootstrap=46]:0.091873,('Q91PQ1.1_Deltatorquevirus':0.58716,'XLM28105.1_Aleptorquevirus_rabbit':0.752003)[&bootstrap=100]:0.372834)[&bootstrap=59]:0.376048,(('WCS65885.1_Lambdatorquevirus_seal':0.556065,'YP_009058903.1_Lambdatorquevirus_seal':0.575971)[&bootstrap=90]:0.132904,(('YP_009505748.1_Etatorquevirus_cat':0.388332,'YP_010796990.1_Etatorquevirus_cat':0.420368)[&bootstrap=100]:0.31916,'YP_002640216.1_Sigmatorquevirus_sealion':0.785079)[&bootstrap=79]:0.088258)[&bootstrap=100]:0.627337)[&bootstrap=100]:1.775648)[&bootstrap=35]:0.076224)[&bootstrap=36]:0.115498,(('YP_006576517.1_gryovirus_human':0.246744,'YP_008798238.1_gyrovirus_human':0.301999)[&bootstrap=100]:0.435564,'QBM01053.1_gyrovirus_bird':0.656209)[&bootstrap=85]:0.218265)[&bootstrap=100]:0.261765)[&bootstrap=99]:0.140502);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=14;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

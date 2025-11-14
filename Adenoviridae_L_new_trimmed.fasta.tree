@@ -1,0 +1,152 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=50;
+	taxlabels
+	114_k141_200212_-_ORF_1__frame_1__translation[&!color=#c750ad]
+	126_k141_25079_-_ORF_6__frame_3__translation[&!color=#eb2636]
+	136_k141_306636_-_ORF_3__frame_3__translation[&!color=#eb2636]
+	142_k141_206925_-_ORF_4__frame_2__translation[&!color=#eb2636]
+	14_k141_99736_-_ORF_1__frame_1__translation[&!color=#de263e]
+	152_k141_69892_-_ORF_4__frame_3__translation[&!color=#eb2636]
+	154_k141_58120_-_ORF_1__frame_3__translation[&!color=#eb2636]
+	15_k141_145801_-_ORF_1__frame_1__translation[&!color=#de263e]
+	163_k141_129221_-_ORF_1__frame_3__translation[&!color=#eb2636]
+	167_k141_111991_-_ORF_1__frame_3__translation[&!color=#eb2636]
+	183_k141_201301_-_ORF_9__frame_3__translation_-_183_k141_324021_-_ORF_3__frame_3__translation[&!color=#eb2636]
+	193_k141_311906_-_ORF_1__frame_1__translation[&!color=#eb2636]
+	195_k141_169775_-_ORF_2__frame_3__translation_-_195_k141_137084_-_ORF_2__frame_2__translation[&!color=#eb2636]
+	197_k141_322480_-_ORF_1__frame_1__translation[&!color=#eb2636]
+	199_k141_281373_-_ORF_2__frame_3__translation[&!color=#eb2636]
+	69_k141_353029_-_ORF_1__frame_1__translation[&!color=#c750ad]
+	94_k141_167389_-_ORF_121__frame_3__translation[&!color=#4ac74e]
+	95_k141_19852_-_ORF_14__frame_2__translation[&!color=#4ac74e]
+	'AAK68691.1_top_hit_bird_Atadenovirus'[&!color=#eb8a2f]
+	'AAS89695.1_Atadenovirus_lizard'
+	'ADM53793.1_Aviadenovirus_bird'
+	'AGH58206.1_top_hit_bird'[&!color=#eb8a2f]
+	'ANW06228.1_Atadenovirus_turtle'
+	'AXE75624.1_Mastadenovirus_bat'
+	'DBA47499.1_top_hit_lizard'[&!color=#eb8a2f]
+	'DBA49229.1_top_hit_lizard'[&!color=#eb8a2f]
+	'NP_062435.1_Siadenovirus_frog'
+	'O72540.1_Mastadenovirus_bovine'
+	'Q64751.1_Aviadenovirus_birds'
+	'Q8QNT0.2_Atadenovirus_snake'
+	'QDF59441.1_Atadenovirus_reptile'
+	'QGQ62426.1_top_hit_bird_Aviadenovirus'[&!color=#eb8a2f]
+	'QGX86418.1_top_hit_duck_Barthadenovirus'
+	'QJX14716.1_Siadenovirus_bird'
+	'QPN96238.1_Top_hit_bird_Siadenovirus'[&!color=#eb8a2f]
+	'UKS51805.1_top_hit_bird_Aviadenovirus'[&!color=#eb8a2f]
+	'ULR85938.1_Adenoviridae_lizard'
+	'WGL40794.1_top_hit_bird_Aviadenovirus'[&!color=#eb8a2f]
+	'WPS63611.1_top_hit_bird_Aviadenovirus'[&!color=#eb8a2f]
+	'WYD57886.1_top_hit_bird_Siadenovirus'[&!color=#eb8a2f]
+	'XQT58830.1_top_hit_bird_Siadenovirus'[&!color=#eb8a2f]
+	'YP_009047155.1_Aviadenovirus_duck'
+	'YP_009051654.1_top_hit_lizard_Atadenovirus'[&!color=#eb8a2f]
+	'YP_009112716.1_top_hit_bird_Atadenovirus'[&!color=#eb8a2f]
+	'YP_009252208.1_Siadenovirus_penguin'
+	'YP_009373238.1_Mastadenovirus_deer'
+	'YP_009553556.1_Mastadenovirus_bear'
+	'YP_010790522.1_Ichtadenovirus_fish'
+	'YP_010796997.1_Testadenovirus_turtle'
+	'YP_010799985.1_Aviadenovirus_bird_feces'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (14_k141_99736_-_ORF_1__frame_1__translation:0.154727,((15_k141_145801_-_ORF_1__frame_1__translation:0.206559,'XQT58830.1_top_hit_bird_Siadenovirus':0.158649)[&bootstrap=79]:0.042843,((('QJX14716.1_Siadenovirus_bird':0.001707,'WYD57886.1_top_hit_bird_Siadenovirus':0.004595)[&bootstrap=100]:0.236294,(163_k141_129221_-_ORF_1__frame_3__translation:0.15816,'QPN96238.1_Top_hit_bird_Siadenovirus':0.157497)[&bootstrap=100]:0.138147)[&bootstrap=58]:0.059178,'YP_009252208.1_Siadenovirus_penguin':0.19132)[&bootstrap=60]:0.058401)[&bootstrap=66]:0.033598,('NP_062435.1_Siadenovirus_frog':0.439377,(((((((((69_k141_353029_-_ORF_1__frame_1__translation:0.006705,114_k141_200212_-_ORF_1__frame_1__translation:3.0E-6)[&bootstrap=100]:0.115176,(94_k141_167389_-_ORF_121__frame_3__translation:2.0E-6,95_k141_19852_-_ORF_14__frame_2__translation:2.0E-6)[&bootstrap=100]:0.077591)[&bootstrap=96]:0.07141,((126_k141_25079_-_ORF_6__frame_3__translation:0.083855,154_k141_58120_-_ORF_1__frame_3__translation:0.098989)[&bootstrap=99]:0.076677,167_k141_111991_-_ORF_1__frame_3__translation:0.406649)[&bootstrap=69]:0.061738)[&bootstrap=98]:0.076201,(193_k141_311906_-_ORF_1__frame_1__translation:0.079778,195_k141_169775_-_ORF_2__frame_3__translation_-_195_k141_137084_-_ORF_2__frame_2__translation:0.095097)[&bootstrap=99]:0.106578)[&bootstrap=93]:0.083145,142_k141_206925_-_ORF_4__frame_2__translation:0.204535)[&bootstrap=100]:0.254451,('YP_009112716.1_top_hit_bird_Atadenovirus':0.405528,((('AAK68691.1_top_hit_bird_Atadenovirus':0.001363,'QGX86418.1_top_hit_duck_Barthadenovirus':0.003377)[&bootstrap=100]:0.304448,('DBA49229.1_top_hit_lizard':0.244924,'QDF59441.1_Atadenovirus_reptile':0.172482)[&bootstrap=99]:0.158667)[&bootstrap=65]:0.088648,(('Q8QNT0.2_Atadenovirus_snake':0.195228,'YP_009051654.1_top_hit_lizard_Atadenovirus':0.126897)[&bootstrap=99]:0.15075,(('AAS89695.1_Atadenovirus_lizard':0.298653,'ANW06228.1_Atadenovirus_turtle':0.223297)[&bootstrap=97]:0.084076,('DBA47499.1_top_hit_lizard':3.0E-6,'ULR85938.1_Adenoviridae_lizard':2.0E-6)[&bootstrap=100]:0.238155)[&bootstrap=94]:0.076628)[&bootstrap=99]:0.101925)[&bootstrap=64]:0.074915)[&bootstrap=96]:0.091544)[&bootstrap=99]:0.12572,('AXE75624.1_Mastadenovirus_bat':0.280858,('YP_009553556.1_Mastadenovirus_bear':0.287487,('O72540.1_Mastadenovirus_bovine':0.097867,'YP_009373238.1_Mastadenovirus_deer':0.083119)[&bootstrap=100]:0.247366)[&bootstrap=91]:0.078626)[&bootstrap=100]:0.240956)[&bootstrap=98]:0.130504,(((((136_k141_306636_-_ORF_3__frame_3__translation:0.103888,'AGH58206.1_top_hit_bird':0.066278)[&bootstrap=97]:0.054104,152_k141_69892_-_ORF_4__frame_3__translation:0.048707)[&bootstrap=99]:0.105558,((183_k141_201301_-_ORF_9__frame_3__translation_-_183_k141_324021_-_ORF_3__frame_3__translation:0.207951,(197_k141_322480_-_ORF_1__frame_1__translation:0.08209,(199_k141_281373_-_ORF_2__frame_3__translation:0.147052,'UKS51805.1_top_hit_bird_Aviadenovirus':0.082111)[&bootstrap=99]:0.069243)[&bootstrap=98]:0.045468)[&bootstrap=67]:0.030516,(('YP_010799985.1_Aviadenovirus_bird_feces':0.224575,'WGL40794.1_top_hit_bird_Aviadenovirus':0.214786)[&bootstrap=95]:0.052587,('ADM53793.1_Aviadenovirus_bird':0.179966,('Q64751.1_Aviadenovirus_birds':0.161525,'QGQ62426.1_top_hit_bird_Aviadenovirus':0.142847)[&bootstrap=95]:0.036657)[&bootstrap=98]:0.027342)[&bootstrap=96]:0.057172)[&bootstrap=52]:0.028724)[&bootstrap=74]:0.052361,'WPS63611.1_top_hit_bird_Aviadenovirus':0.120775)[&bootstrap=100]:0.197835,'YP_009047155.1_Aviadenovirus_duck':0.257657)[&bootstrap=100]:0.463716)[&bootstrap=91]:0.118823,('YP_010790522.1_Ichtadenovirus_fish':0.472047,'YP_010796997.1_Testadenovirus_turtle':0.681674)[&bootstrap=90]:0.136134)[&bootstrap=100]:0.202171)[&bootstrap=100]:0.146616);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

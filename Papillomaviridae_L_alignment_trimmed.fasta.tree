@@ -1,0 +1,167 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=65;
+	taxlabels
+	132_k141_353310_-_ORF_1__frame_1__translation[&!color=#78ddeb]
+	136_k141_365451_-_ORF_5__frame_1__translation[&!color=#eb4e4b]
+	137_k141_191168_-_ORF_1__frame_1__translation[&!color=#c714c7]
+	138_k141_167882_-_ORF_3__frame_2__translation[&!color=#c714c7]
+	138_k141_362146_-_ORF_2__frame_3__translation[&!color=#eb4e4b]
+	142_k141_221371_-_ORF_1__frame_1__translation[&!color=#eb4e4b]
+	143_k141_41479_-_ORF_2__frame_1__translation[&!color=#eb4e4b]
+	152_k141_173251_-_ORF_16__frame_1__translation[&!color=#eb4e4b]
+	152_k141_186560_-_ORF_11__frame_2__translation[&!color=#c714c7]
+	154_k141_156229_-_ORF_2__frame_2__translation[&!color=#a44cc7]
+	154_k141_221562_-_ORF_1__frame_2__translation[&!color=#78ddeb]
+	154_k141_241657_-_ORF_1__frame_1__translation[&!color=#4c9c4e]
+	155_k141_265905_-_ORF_5__frame_3__translation[&!color=#a44cc7]
+	155_k141_347552_-_ORF_25__frame_3__translation[&!color=#4c9c4e]
+	192_k141_33557_-_ORF_3__frame_3__translation[&!color=#eb4e4b]
+	193_k141_287233_-_ORF_7__frame_1__translation[&!color=#61eb54]
+	194_k141_142189_-_ORF_1__frame_1__translation_-_194_k141_102966_-_ORF_3__frame_1__translation[&!color=#44c744]
+	194_k141_182738_-_ORF_2__frame_3__translation[&!color=#eb4e4b]
+	195_k141_74348_-_ORF_2__frame_3__translation[&!color=#44c744]
+	43_k141_169671_-_ORF_2__frame_2__translation[&!color=#eb4e4b]
+	53_k141_233522_-_ORF_1__frame_1__translation[&!color=#eb4e4b]
+	5_k141_23331_-_ORF_4__frame_3__translation[&!color=#eb4e4b]
+	64_k141_126177_-_ORF_4__frame_3__translation[&!color=#ba65eb]
+	64_k141_257892_-_ORF_3__frame_1__translation[&!color=#42b7c7]
+	65_k141_37863_-_ORF_2__frame_3__translation[&!color=#ba65eb]
+	65_k141_423886_-_ORF_6__frame_3__translation[&!color=#42b7c7]
+	74_k141_25220_-_ORF_1__frame_3__translation_-_74_k141_124544_-_ORF_5__frame_3__translation[&!color=#483ac7]
+	74_k141_25296_-_ORF_4__frame_3__translation[&!color=#eb4e4b]
+	74_k141_45762_-_ORF_6__frame_3__translation[&!color=#c72ac7]
+	75_k141_10928_-_ORF_7__frame_1__translation[&!color=#483ac7]
+	75_k141_26189_-_ORF_1__frame_1__translation[&!color=#c72ac7]
+	79_k141_435157_-_ORF_3__frame_3__translation[&!color=#eb4e4b]
+	81_k141_109912_-_ORF_2__frame_1__translation[&!color=#eb4e4b]
+	88_k141_15625_-_ORF_3__frame_2__translation[&!color=#eb4e4b]
+	'ACD39818.1_turtle_Dyozetapapillomavirus_Firstpapillomavirinae'
+	'AHC00356.1_human_Gammapapillomavirus_Firstpapillomavirinae'
+	'ANN29877.1_top_hit_duck'[&!color=#ffa321]
+	'DBA49688.1_top_hit_bird'[&!color=#ffa321]
+	'NP_057848.1_rabbit_Kappapapillomavirus_Firstpapillomavirinae'
+	'P27557.2_human_Nupapillomavirus'
+	'QBR99465.1_top_hit_bird_papillomaviridae'[&!color=#ffa321]
+	'QBR99491.1_Top_hit_duck_Papillomaviridae'[&!color=#ffa321]
+	'QBR99496.1_Top_hit_duck_papillomaviridae'[&!color=#ffa321]
+	'QBR99497.1_Top_hit_duck_Papillomaviridae'[&!color=#ffa321]
+	'QBR99511.1_Top_hit_Gull_Papillomaviridae'[&!color=#ffa321]
+	'QBR99515.1_Top_hit_Bird_Papillomaviridae'[&!color=#ffa321]
+	'QBR99518.1_Top_hit_bird'[&!color=#ffa321]
+	'QNR09201.1_deer_Epsilonpapillomavirus_Firstpapillomavirinae'
+	'QYI89648.1_cow_Xipapillomavirus_Firstpapillomavirinae'
+	'UUA80629.1_porcupine_Sigmapapillomavirus_Firstpapillomavirinae'
+	'WPS63792.1_top_hit_storm_petrel_Papillomaviridae'[&!color=#ffa321]
+	'YP_004646337.1_macque_Betapapillomavirus_Firstpapillomavirinae___'
+	'YP_007518497.1_horse_Dyorhopapillomavirus_Firstpapillomavirinae'
+	'YP_009022077.1_Top_hit_bird_papillomaviridae_Firstpapillomavirinae'[&!color=#ffa321]
+	'YP_009058918.1_mouse_Pipapillomavirus_Firstpapillomavirinae'
+	'YP_009126913.1_dog_Chipapillomavirus_Firstpapillomavirinae'
+	'YP_009345082.1_bat_metagenome_Psipapillomavirus'
+	'YP_009389462.1_panda_Omegapapillomavirus'
+	'YP_009466004.1_seal_papillomaviridae'
+	'YP_009507278.1_bat_Dyotaupapillomavirus_Firstpapillomavirinae'
+	'YP_009507323.1_manatee_Rhopapillomavirus_Firstpapillomavirinae'
+	'YP_009507329.1_bat_Treisdeltapapillomavirus_Firstpapillomavirinae'
+	'YP_009508765.1_bat_Treisiotapapillomavirus_Firstpapillomavirinae'
+	'YP_406565.1_cow_Dyoxipapillomavirus_Firstpapillomavirinae'
+	'YP_656480.1_dolphin_Upsilonpapillomavirus_Firstpapillomavirinae'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (5_k141_23331_-_ORF_4__frame_3__translation:0.159209,(((64_k141_257892_-_ORF_3__frame_1__translation:0.003391,65_k141_423886_-_ORF_6__frame_3__translation:3.0E-6)[&bootstrap=100]:0.03401,132_k141_353310_-_ORF_1__frame_1__translation:0.013553)[&bootstrap=97]:0.045309,154_k141_221562_-_ORF_1__frame_2__translation:3.0E-6)[&bootstrap=100]:0.175829,(((74_k141_45762_-_ORF_6__frame_3__translation:2.0E-6,75_k141_26189_-_ORF_1__frame_1__translation:0.016141)[&bootstrap=100]:0.178483,(152_k141_173251_-_ORF_16__frame_1__translation:0.159008,'QBR99518.1_Top_hit_bird':0.156793)[&bootstrap=100]:0.123223)[&bootstrap=66]:0.034241,(((88_k141_15625_-_ORF_3__frame_2__translation:0.119831,(154_k141_241657_-_ORF_1__frame_1__translation:0.004921,155_k141_347552_-_ORF_25__frame_3__translation:0.022578)[&bootstrap=100]:0.147091)[&bootstrap=98]:0.080497,('QBR99465.1_top_hit_bird_papillomaviridae':0.127654,((79_k141_435157_-_ORF_3__frame_3__translation:0.081694,('YP_009022077.1_Top_hit_bird_papillomaviridae_Firstpapillomavirinae':0.067168,81_k141_109912_-_ORF_2__frame_1__translation:0.195591)[&bootstrap=46]:0.039192)[&bootstrap=99]:0.21247,((((((((43_k141_169671_-_ORF_2__frame_2__translation:0.080038,'WPS63792.1_top_hit_storm_petrel_Papillomaviridae':0.083685)[&bootstrap=100]:0.082652,194_k141_182738_-_ORF_2__frame_3__translation:0.184193)[&bootstrap=64]:0.033539,192_k141_33557_-_ORF_3__frame_3__translation:0.216326)[&bootstrap=48]:0.051717,(142_k141_221371_-_ORF_1__frame_1__translation:0.082407,(136_k141_365451_-_ORF_5__frame_1__translation:0.065186,((137_k141_191168_-_ORF_1__frame_1__translation:0.01011,152_k141_186560_-_ORF_11__frame_2__translation:3.0E-6)[&bootstrap=95]:0.005692,138_k141_167882_-_ORF_3__frame_2__translation:3.0E-6)[&bootstrap=100]:0.023751)[&bootstrap=100]:0.134625)[&bootstrap=75]:0.020672)[&bootstrap=97]:0.083908,(138_k141_362146_-_ORF_2__frame_3__translation:0.1301,(193_k141_287233_-_ORF_7__frame_1__translation:0.017201,(194_k141_142189_-_ORF_1__frame_1__translation_-_194_k141_102966_-_ORF_3__frame_1__translation:2.0E-6,195_k141_74348_-_ORF_2__frame_3__translation:0.00648)[&bootstrap=100]:0.028413)[&bootstrap=100]:0.117342)[&bootstrap=100]:0.126977)[&bootstrap=63]:0.043027,('DBA49688.1_top_hit_bird':0.272362,((((74_k141_25220_-_ORF_1__frame_3__translation_-_74_k141_124544_-_ORF_5__frame_3__translation:2.0E-6,75_k141_10928_-_ORF_7__frame_1__translation:2.0E-6)[&bootstrap=97]:0.001332,74_k141_25296_-_ORF_4__frame_3__translation:0.139426)[&bootstrap=100]:0.114296,143_k141_41479_-_ORF_2__frame_1__translation:0.132)[&bootstrap=99]:0.086883,((64_k141_126177_-_ORF_4__frame_3__translation:0.015684,(154_k141_156229_-_ORF_2__frame_2__translation:2.0E-6,155_k141_265905_-_ORF_5__frame_3__translation:2.0E-6)[&bootstrap=99]:0.027932)[&bootstrap=36]:7.7E-5,65_k141_37863_-_ORF_2__frame_3__translation:0.03294)[&bootstrap=100]:0.220386)[&bootstrap=97]:0.073955)[&bootstrap=92]:0.075451)[&bootstrap=83]:0.054514,((53_k141_233522_-_ORF_1__frame_1__translation:0.010368,'ANN29877.1_top_hit_duck':0.024914)[&bootstrap=100]:0.080761,(('QBR99491.1_Top_hit_duck_Papillomaviridae':2.0E-6,'QBR99497.1_Top_hit_duck_Papillomaviridae':2.0E-6)[&bootstrap=66]:2.0E-6,'QBR99496.1_Top_hit_duck_papillomaviridae':2.0E-6)[&bootstrap=100]:0.108612)[&bootstrap=100]:0.107685)[&bootstrap=95]:0.076972,(((((((('AHC00356.1_human_Gammapapillomavirus_Firstpapillomavirinae':0.28282,'YP_009058918.1_mouse_Pipapillomavirus_Firstpapillomavirinae':0.237449)[&bootstrap=83]:0.022502,'YP_406565.1_cow_Dyoxipapillomavirus_Firstpapillomavirinae':0.506409)[&bootstrap=86]:0.063548,(('QYI89648.1_cow_Xipapillomavirus_Firstpapillomavirinae':0.328551,'YP_656480.1_dolphin_Upsilonpapillomavirus_Firstpapillomavirinae':0.475456)[&bootstrap=51]:0.07444,'YP_009345082.1_bat_metagenome_Psipapillomavirus':0.562631)[&bootstrap=35]:0.027307)[&bootstrap=46]:0.070983,'YP_004646337.1_macque_Betapapillomavirus_Firstpapillomavirinae___':0.301755)[&bootstrap=65]:0.08459,((('YP_009126913.1_dog_Chipapillomavirus_Firstpapillomavirinae':0.262655,('YP_007518497.1_horse_Dyorhopapillomavirus_Firstpapillomavirinae':0.39764,'QNR09201.1_deer_Epsilonpapillomavirus_Firstpapillomavirinae':0.455794)[&bootstrap=81]:0.083098)[&bootstrap=42]:0.044943,'YP_009466004.1_seal_papillomaviridae':0.324778)[&bootstrap=66]:0.054599,('NP_057848.1_rabbit_Kappapapillomavirus_Firstpapillomavirinae':0.260723,('YP_009507329.1_bat_Treisdeltapapillomavirus_Firstpapillomavirinae':0.229281,('YP_009507278.1_bat_Dyotaupapillomavirus_Firstpapillomavirinae':0.386506,('P27557.2_human_Nupapillomavirus':0.271421,'UUA80629.1_porcupine_Sigmapapillomavirus_Firstpapillomavirinae':0.225633)[&bootstrap=100]:0.120337)[&bootstrap=99]:0.10268)[&bootstrap=98]:0.113705)[&bootstrap=100]:0.1338)[&bootstrap=50]:0.031785)[&bootstrap=64]:0.056457,('YP_009389462.1_panda_Omegapapillomavirus':0.176681,'YP_009508765.1_bat_Treisiotapapillomavirus_Firstpapillomavirinae':0.235801)[&bootstrap=100]:0.135987)[&bootstrap=66]:0.034482,'YP_009507323.1_manatee_Rhopapillomavirus_Firstpapillomavirinae':0.336373)[&bootstrap=100]:0.225226,'ACD39818.1_turtle_Dyozetapapillomavirus_Firstpapillomavirinae':0.565888)[&bootstrap=100]:0.225728)[&bootstrap=98]:0.079353)[&bootstrap=99]:0.105896)[&bootstrap=77]:0.054341)[&bootstrap=57]:0.022068,('QBR99511.1_Top_hit_Gull_Papillomaviridae':0.11052,'QBR99515.1_Top_hit_Bird_Papillomaviridae':0.103354)[&bootstrap=100]:0.061588)[&bootstrap=59]:0.033661)[&bootstrap=65]:0.052894);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

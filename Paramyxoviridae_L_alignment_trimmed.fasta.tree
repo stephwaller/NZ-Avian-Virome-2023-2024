@@ -1,0 +1,132 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=30;
+	taxlabels
+	78_k141_266496_-_ORF_2__frame_3__translation[&!color=#eb4e4b]
+	79_k141_274734_-_ORF_2__frame_3__translation[&!color=#eb4e4b]
+	81_k141_302387_-_ORF_1__frame_2__translation[&!color=#eb4e4b]
+	84_k141_265573_-_ORF_1__frame_2__translation[&!color=#eb4e4b]
+	'ACJ82944.1_duck_Avulavirinae__Orthoavulavirus'
+	'AEI98802.1_Penguin_Avulavirinae'
+	'AIJ01324.1_boa_Feraresvirinae_Ferlavirus'
+	'AQQ11611.1_top_hit_Avulavirinae_Metaavulavirus_bird'
+	'AVM87362.1_shark_Skoliovirinae_Scoliodonvirus'
+	'AVM87391.1_lizardfish_Metaparamyxovirinae_Synodonvirus'
+	'AVM87400.1_ghostfish_Ichthysvirinae__Hoplichthysvirus'
+	'AYN62580.1_Feraresvirinae_Aquaparamyxovirus_salmon'
+	'BAO04376.1_rat_Paramyxoviridae'
+	'BAV25267.1_Avulavirinae_Metaavulavirus_bird'
+	'DAA06049.1_pig_Rubulavirinae_Orthorubulavirus'
+	'NP_054697.1_tree_shrew_Orthoparamyxovirinae__Narmovirus'
+	'NP_958055.1_rat_Orthoparamyxovirinae_Narmovirus'
+	'UHC38504.1_cat_Orthoparamyxovirinae_Morbillivirus'
+	'UQT69483.1_duck_Avulavirinae_Paraavulavirus'
+	'URH08552.1_Avulavirinae_Metaavulavirus_bird'
+	'UUV47242.1_shrew_Orthoparamyxovirinae_Henipavirus'
+	'XLS83388.1_Orthoparamyxovirinae_Parahenipavirus_shrew'
+	'YP_009091839.1_bat_Orthoparamyxovirinae_Henipavirus'
+	'YP_009094067.1_bat_Rubulavirinae_Pararubulavirus'
+	'YP_009094073.2_top_hit_Avulavirinae_Metaavulavirus_bird'
+	'YP_009094339.1_horse_Orthoparamyxovirinae_Salemvirus'
+	'YP_009505447.1_Bat_Rubulavirinae_Orthorubulavirus'
+	'YP_009666855.1_Rat_Orthoparamyxovirinae_Jeilongvirus'
+	'YP_010790495.1_Glossavirinae_Cynoglossusvirus_plant'
+	'YP_010806263.1_Feraresvirinae_Respirovirus_squirrel'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (78_k141_266496_-_ORF_2__frame_3__translation:2.0E-6,((('AQQ11611.1_top_hit_Avulavirinae_Metaavulavirus_bird':2.0E-6,81_k141_302387_-_ORF_1__frame_2__translation:0.055198)[&bootstrap=82]:0.001291,'YP_009094073.2_top_hit_Avulavirinae_Metaavulavirus_bird':2.0E-6)[&bootstrap=85]:0.006416,(('AEI98802.1_Penguin_Avulavirinae':0.039432,84_k141_265573_-_ORF_1__frame_2__translation:0.00607)[&bootstrap=77]:0.01523,(('BAV25267.1_Avulavirinae_Metaavulavirus_bird':0.314942,'URH08552.1_Avulavirinae_Metaavulavirus_bird':0.344503)[&bootstrap=100]:0.152325,((((('DAA06049.1_pig_Rubulavirinae_Orthorubulavirus':0.273229,'YP_009505447.1_Bat_Rubulavirinae_Orthorubulavirus':0.22747)[&bootstrap=100]:0.113399,'YP_009094067.1_bat_Rubulavirinae_Pararubulavirus':0.270336)[&bootstrap=100]:0.226332,(((('AIJ01324.1_boa_Feraresvirinae_Ferlavirus':0.455584,('AYN62580.1_Feraresvirinae_Aquaparamyxovirus_salmon':0.298478,'YP_010806263.1_Feraresvirinae_Respirovirus_squirrel':0.359683)[&bootstrap=100]:0.197085)[&bootstrap=98]:0.104251,((((('BAO04376.1_rat_Paramyxoviridae':0.075423,'NP_958055.1_rat_Orthoparamyxovirinae_Narmovirus':0.127287)[&bootstrap=100]:0.191284,('UHC38504.1_cat_Orthoparamyxovirinae_Morbillivirus':0.337477,'YP_009094339.1_horse_Orthoparamyxovirinae_Salemvirus':0.415469)[&bootstrap=65]:0.092339)[&bootstrap=39]:0.057158,'NP_054697.1_tree_shrew_Orthoparamyxovirinae__Narmovirus':0.329173)[&bootstrap=50]:0.06321,'YP_009666855.1_Rat_Orthoparamyxovirinae_Jeilongvirus':0.303699)[&bootstrap=48]:0.064984,(('UUV47242.1_shrew_Orthoparamyxovirinae_Henipavirus':0.007298,'XLS83388.1_Orthoparamyxovirinae_Parahenipavirus_shrew':0.007604)[&bootstrap=100]:0.277694,'YP_009091839.1_bat_Orthoparamyxovirinae_Henipavirus':0.369736)[&bootstrap=82]:0.079279)[&bootstrap=100]:0.206103)[&bootstrap=100]:0.155823,'AVM87391.1_lizardfish_Metaparamyxovirinae_Synodonvirus':0.660196)[&bootstrap=99]:0.147641,('AVM87362.1_shark_Skoliovirinae_Scoliodonvirus':0.811905,('YP_010790495.1_Glossavirinae_Cynoglossusvirus_plant':0.728175,'AVM87400.1_ghostfish_Ichthysvirinae__Hoplichthysvirus':0.955941)[&bootstrap=99]:0.223888)[&bootstrap=99]:0.125387)[&bootstrap=100]:0.383258)[&bootstrap=100]:0.1542,'UQT69483.1_duck_Avulavirinae_Paraavulavirus':0.696392)[&bootstrap=92]:0.096009,'ACJ82944.1_duck_Avulavirinae__Orthoavulavirus':0.558128)[&bootstrap=100]:0.162764)[&bootstrap=100]:0.355975)[&bootstrap=89]:0.015733)[&bootstrap=92]:0.008326,79_k141_274734_-_ORF_2__frame_3__translation:2.0E-6);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=13;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

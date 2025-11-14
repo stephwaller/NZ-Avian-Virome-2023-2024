@@ -1,0 +1,124 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=22;
+	taxlabels
+	3JB_A__moth_Cypovirus
+	4_k141_28346_-_ORF_5__frame_3__translation[&!color=#eb4e4b]
+	8_k141_22901_-_ORF_3__frame_3__translation[&!color=#eb4e4b]
+	'AAL31497.1_salmon_Aquareovirus'
+	'AAN46860.1_moth_Cypovirus'
+	'AEI60134.1_plant_Fijivirus'
+	'AGR27917.1_salmon_Orthoreovirus'
+	'ANC52159.1_fungi_Mycoreovirus'
+	'AXB99504.1_fish_Aquareovirus'
+	'BCM29143.1_top_hit_crow_Orthoreovirus'
+	'BDB06937.1_tick_Coltivirus'
+	'O92604.1_rice_Oryzavirus'
+	'P0CK31.1_mammal_Orthoreovirus'
+	'Q2Y0E9.1_mosquito_Dinovernavirus'
+	'Q8JU61.1_fish_Aquareovirus'
+	'QJW82767.1_top_hit_Orthoreovirus_bird'
+	'QPB10683.1_top_hit_Orthoreovirus_bird'
+	'QYV43093.1_tick_Coltivirus'
+	'UAJ21445.1_duck_Orthoreovirus'
+	'WZH59185.1_sediment_Spinareoviridae'
+	'YP_010086008.1_tick_Coltivirus'
+	'YP_010839305.1_plant_Fijivirus'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ('Q8JU61.1_fish_Aquareovirus':0.284289,'AAL31497.1_salmon_Aquareovirus':0.327748,((((('UAJ21445.1_duck_Orthoreovirus':0.156641,((('QPB10683.1_top_hit_Orthoreovirus_bird':0.033422,4_k141_28346_-_ORF_5__frame_3__translation:0.046351)[&bootstrap=46]:0.011557,'QJW82767.1_top_hit_Orthoreovirus_bird':0.027405)[&bootstrap=100]:0.050881,'BCM29143.1_top_hit_crow_Orthoreovirus':0.07268)[&bootstrap=100]:0.092598)[&bootstrap=100]:0.087454,8_k141_22901_-_ORF_3__frame_3__translation:0.175264)[&bootstrap=100]:0.192823,'P0CK31.1_mammal_Orthoreovirus':0.356189)[&bootstrap=100]:0.142056,('AGR27917.1_salmon_Orthoreovirus':0.431209,((('QYV43093.1_tick_Coltivirus':0.238461,('YP_010086008.1_tick_Coltivirus':0.201142,'BDB06937.1_tick_Coltivirus':0.200974)[&bootstrap=100]:0.166985)[&bootstrap=100]:0.640114,'ANC52159.1_fungi_Mycoreovirus':0.911846)[&bootstrap=100]:0.647351,((('YP_010839305.1_plant_Fijivirus':5.8E-5,'AEI60134.1_plant_Fijivirus':0.052902)[&bootstrap=100]:1.008224,'WZH59185.1_sediment_Spinareoviridae':1.041541)[&bootstrap=99]:0.361015,(((3JB_A__moth_Cypovirus:0.035302,'AAN46860.1_moth_Cypovirus':0.027648)[&bootstrap=100]:0.842021,'Q2Y0E9.1_mosquito_Dinovernavirus':1.135132)[&bootstrap=99]:0.334261,'O92604.1_rice_Oryzavirus':1.002613)[&bootstrap=100]:0.497766)[&bootstrap=91]:0.259535)[&bootstrap=100]:1.901771)[&bootstrap=58]:0.114214)[&bootstrap=86]:0.155597,'AXB99504.1_fish_Aquareovirus':0.405536)[&bootstrap=100]:0.299533);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=16;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

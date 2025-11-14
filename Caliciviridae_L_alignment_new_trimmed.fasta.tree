@@ -1,0 +1,173 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=71;
+	taxlabels
+	140_k141_403166_-_ORF_1__frame_1__translation[&!color=#e62c44]
+	144_k141_180867_-_ORF_12__frame_2__translation[&!color=#e62c44]
+	180_k141_115198_-_ORF_6__frame_3__translation_-_180_k141_299720_-_ORF_4__frame_3__translation[&!color=#e62c44]
+	180_k141_194206_-_ORF_6__frame_3__translation[&!color=#e62c44]
+	183_k141_105791_-_ORF_11__frame_3__translation[&!color=#c7945a]
+	183_k141_146511_-_ORF_3__frame_3__translation[&!color=#e62c44]
+	183_k141_236420_-_ORF_10__frame_3__translation[&!color=#e62c44]
+	183_k141_296643_-_ORF_6__frame_3__translation[&!color=#e62c44]
+	183_k141_96291_-_ORF_10__frame_2__translation_-_183_k141_94162_-_ORF_1__frame_1__translation[&!color=#e62c44]
+	193_k141_29430_-_ORF_1__frame_2__translation[&!color=#c765c4]
+	197_k141_266808_-_ORF_8__frame_3__translation[&!color=#c765c4]
+	197_k141_339161_-_ORF_1__frame_1__translation[&!color=#e62c44]
+	198_k141_303369_-_ORF_1__frame_3__translation[&!color=#eb4be5]
+	198_k141_353146_-_ORF_1__frame_3__translation[&!color=#e62c44]
+	199_k141_163670_-_ORF_1__frame_1__translation[&!color=#e62c44]
+	3_k141_239487_-_ORF_3__frame_2__translation[&!color=#c7945a]
+	83_k141_60070_-_ORF_1__frame_3__translation[&!color=#2ac751]
+	99_k141_233348_-_ORF_1__frame_1__translation[&!color=#2ac751]
+	'AAA21862.1_Human_Norovirus'
+	'AAA58601.1_skunk_vesivirus'
+	'AAA82215.1_cow_vesivirus'
+	'AAF04560.1_Pig_sapovirus'
+	'ADG84581.1_cow_caliciviridae'
+	'ADL57612.1_Rhesus_macaque_norovirus'
+	'AEA36681.2_chicken_caliciviridae'
+	'AFH89840.1_top_hit_bird'
+	'AFJ39663.1_Bat_sapovirus'
+	'AFO37806.1_Bovine_fecal_nebovirus'
+	'AFZ40060.1_Snake_vesivirus'
+	'AHE37924.1_rhesus_macaque_recovirus'
+	'AII73758.1_Huaman_norovirus'
+	'AKI82132.1_seal_sapovirus'
+	'ALF04311.1_cheetah_vesivirus'
+	'ALJ79280.1_environmental_sapovirus'
+	'AVM87195.1_conger_caliciviridae'
+	'AVM87212.1_lamprey_caliciviridae'
+	'AVM87221.1_snake_caliciviridae'
+	'AVM87543.1_rabbitfish_caliciviridae'
+	'AVM87548.1_frog_caliciviridae'
+	'AWI67137.1_Bat_norovirus'
+	'AXF38649.1_top_hit_bird'
+	'AXF38726.1_top_hit_bird'
+	'CAA60262.1_Human_sapovirus'
+	'CAA89265.2_Rabbit_Lagovirus'
+	'NP_777370.1_walrus_vesivirus'
+	'Q8JN60.1_Bovine_Nebovirus'
+	'Q96725.1_Hare_Lagovirus'
+	'QCP68858.1_top_hit_bird'
+	'QEG79135.1_top_hit_bird'
+	'QEG79148.1_top_hit_bird'
+	'QIB98724.1_Salmon_salovirus'
+	'QKN88786.1_top_hit_bird'
+	'QKN88788.1_top_hit_bird'
+	'QKN88789.1_top_hit_bird'
+	'QKW94199.1_bee_caliciviridae'
+	'QKW94215.1_bee_caliciviridae'
+	'QXO14952.1_chicken_feces_Barovirus'
+	'ULF99768.1_top_hit_bird'
+	'ULR75166.1_badger_vesivirus'
+	'USL85469.1_Blackbird_caliciviridae'
+	'UVF62123.1_FLying_fox_sapovirus'
+	'WPR16551.1_top_hit_bird'
+	'XHP96627.1_top_hit_bird'
+	'YP_009028574.1_goose_caliciviridae'
+	'YP_009140468.1_badger_vesivirus'
+	'YP_009272568.1_Bovine_nebovirus'
+	'YP_009337240.1_chicken_feces_Barvovirus'
+	'YP_009417302.1_Minow_minovirus'
+	'YP_009552830.1_Marmot_norovirus'
+	'YP_009666335.1_rhesus_macaque_recovirus'
+	'YP_009666353.1_Turkey_nacovirus'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ('YP_009666353.1_Turkey_nacovirus':0.224178,(('YP_009028574.1_goose_caliciviridae':0.138983,('QEG79148.1_top_hit_bird':0.001209,'QEG79135.1_top_hit_bird':0.001914)[&bootstrap=100]:0.119782)[&bootstrap=100]:0.119412,('AXF38649.1_top_hit_bird':0.185787,((199_k141_163670_-_ORF_1__frame_1__translation:0.149261,(183_k141_236420_-_ORF_10__frame_3__translation:0.120769,183_k141_96291_-_ORF_10__frame_2__translation_-_183_k141_94162_-_ORF_1__frame_1__translation:0.074865)[&bootstrap=80]:0.003471)[&bootstrap=95]:0.041266,183_k141_146511_-_ORF_3__frame_3__translation:0.334133)[&bootstrap=99]:0.032567)[&bootstrap=100]:0.088897)[&bootstrap=98]:0.062128,('AFH89840.1_top_hit_bird':0.277357,(((((('WPR16551.1_top_hit_bird':0.252187,(183_k141_105791_-_ORF_11__frame_3__translation:2.0E-6,3_k141_239487_-_ORF_3__frame_2__translation:0.008186)[&bootstrap=100]:0.229983)[&bootstrap=94]:0.069925,(198_k141_303369_-_ORF_1__frame_3__translation:0.086051,(197_k141_266808_-_ORF_8__frame_3__translation:2.0E-6,193_k141_29430_-_ORF_1__frame_2__translation:2.0E-6)[&bootstrap=76]:2.0E-6)[&bootstrap=100]:0.381941)[&bootstrap=94]:0.097758,'AXF38726.1_top_hit_bird':0.323818)[&bootstrap=87]:0.070912,('ULF99768.1_top_hit_bird':0.286861,144_k141_180867_-_ORF_12__frame_2__translation:0.324362)[&bootstrap=93]:0.05379)[&bootstrap=100]:0.207054,('QKN88786.1_top_hit_bird':0.483098,(140_k141_403166_-_ORF_1__frame_1__translation:0.310945,(99_k141_233348_-_ORF_1__frame_1__translation:0.014181,83_k141_60070_-_ORF_1__frame_3__translation:0.022106)[&bootstrap=100]:0.251953)[&bootstrap=100]:0.342716)[&bootstrap=100]:0.192387)[&bootstrap=100]:0.165271,(('XHP96627.1_top_hit_bird':0.626499,(180_k141_194206_-_ORF_6__frame_3__translation:0.177665,180_k141_115198_-_ORF_6__frame_3__translation_-_180_k141_299720_-_ORF_4__frame_3__translation:0.205028)[&bootstrap=100]:0.445865)[&bootstrap=100]:0.432975,((((((('YP_009140468.1_badger_vesivirus':0.101609,'ULR75166.1_badger_vesivirus':0.078348)[&bootstrap=100]:0.296251,('NP_777370.1_walrus_vesivirus':0.040737,('AAA82215.1_cow_vesivirus':0.008771,('AAA58601.1_skunk_vesivirus':0.025676,'AFZ40060.1_Snake_vesivirus':0.023795)[&bootstrap=96]:0.012691)[&bootstrap=69]:0.003827)[&bootstrap=100]:0.202095)[&bootstrap=79]:0.115946,'ALF04311.1_cheetah_vesivirus':0.250443)[&bootstrap=100]:0.655491,(('Q96725.1_Hare_Lagovirus':0.083368,'CAA89265.2_Rabbit_Lagovirus':0.106955)[&bootstrap=100]:0.746699,('YP_009272568.1_Bovine_nebovirus':0.491561,('Q8JN60.1_Bovine_Nebovirus':0.024055,('AFO37806.1_Bovine_fecal_nebovirus':2.0E-6,'ADG84581.1_cow_caliciviridae':0.007054)[&bootstrap=95]:0.00155)[&bootstrap=100]:0.462237)[&bootstrap=100]:0.474018)[&bootstrap=99]:0.162513)[&bootstrap=100]:0.157588,(('UVF62123.1_FLying_fox_sapovirus':0.403825,'AFJ39663.1_Bat_sapovirus':0.28584)[&bootstrap=100]:0.130487,((('CAA60262.1_Human_sapovirus':0.200671,'ALJ79280.1_environmental_sapovirus':0.133617)[&bootstrap=100]:0.06588,'AKI82132.1_seal_sapovirus':0.251187)[&bootstrap=100]:0.220718,'AAF04560.1_Pig_sapovirus':0.519203)[&bootstrap=99]:0.13356)[&bootstrap=100]:0.291005)[&bootstrap=96]:0.127953,((('YP_009337240.1_chicken_feces_Barvovirus':0.016725,'QXO14952.1_chicken_feces_Barovirus':0.013228)[&bootstrap=60]:0.001793,'AEA36681.2_chicken_caliciviridae':0.011193)[&bootstrap=100]:0.902681,((((('AWI67137.1_Bat_norovirus':0.238111,('AII73758.1_Huaman_norovirus':0.053218,'ADL57612.1_Rhesus_macaque_norovirus':0.038855)[&bootstrap=100]:0.21309)[&bootstrap=78]:0.108844,'AAA21862.1_Human_Norovirus':0.248908)[&bootstrap=100]:0.675764,(('YP_009666335.1_rhesus_macaque_recovirus':3.0E-6,'AHE37924.1_rhesus_macaque_recovirus':0.05734)[&bootstrap=100]:0.844781,'YP_009552830.1_Marmot_norovirus':0.733083)[&bootstrap=100]:0.393494)[&bootstrap=80]:0.146417,('AVM87548.1_frog_caliciviridae':0.751571,'AVM87221.1_snake_caliciviridae':1.009862)[&bootstrap=97]:0.190503)[&bootstrap=71]:0.106057,((('USL85469.1_Blackbird_caliciviridae':0.296624,'QKW94199.1_bee_caliciviridae':0.390323)[&bootstrap=74]:0.046628,'QKW94215.1_bee_caliciviridae':0.149272)[&bootstrap=100]:1.264541,(('YP_009417302.1_Minow_minovirus':0.774189,('QIB98724.1_Salmon_salovirus':0.519696,('AVM87212.1_lamprey_caliciviridae':0.491983,'AVM87195.1_conger_caliciviridae':0.496927)[&bootstrap=100]:0.19453)[&bootstrap=100]:0.401958)[&bootstrap=75]:0.126631,'AVM87543.1_rabbitfish_caliciviridae':0.904174)[&bootstrap=100]:0.497949)[&bootstrap=98]:0.235923)[&bootstrap=100]:0.501363)[&bootstrap=72]:0.125541)[&bootstrap=45]:0.064325,(((('QKN88789.1_top_hit_bird':0.492019,197_k141_339161_-_ORF_1__frame_1__translation:0.636004)[&bootstrap=77]:0.119906,(198_k141_353146_-_ORF_1__frame_3__translation:0.377853,'QCP68858.1_top_hit_bird':0.420834)[&bootstrap=82]:0.098583)[&bootstrap=66]:0.080639,'QKN88788.1_top_hit_bird':0.693843)[&bootstrap=71]:0.106287,183_k141_296643_-_ORF_6__frame_3__translation:0.581069)[&bootstrap=100]:0.459944)[&bootstrap=100]:0.225033)[&bootstrap=100]:0.201359)[&bootstrap=100]:0.19486)[&bootstrap=100]:0.235938);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="bootstrap";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="bootstrap";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=11;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="Midpoint";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
