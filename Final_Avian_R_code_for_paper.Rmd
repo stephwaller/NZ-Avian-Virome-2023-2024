@@ -1,0 +1,766 @@
+---
+title: "Avian_final_code"
+author: "Stephanie Waller"
+date: "2026-04-08"
+output: html_document
+---
+
+```{r set working directory}
+getwd()
+
+setwd("/Users/walst32p/Desktop/Avian/R_code")
+```
+
+```{r Oral vs Cloacal Swabs}
+#1. Load required libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+#2. Read in your data
+df <- read.csv("RPM_Order.csv", header = TRUE)
+
+
+#3. Pivot from wide to long format
+df_long <- df %>%
+  pivot_longer(
+    cols = Adenoviridae:Tobaniviridae,  # adjust if other viral families are included
+    names_to = "Viral_Family",
+    values_to = "RPM"
+  )
+
+df_grouped <- df_long %>%
+  group_by(Sample_Type, Viral_Family) %>%
+  summarise(Total_RPM = sum(RPM), .groups = "drop")
+
+#4. Plot: Stacked bar plot
+ggplot(df_grouped, aes(x = Sample_Type, y = Total_RPM, fill = Viral_Family)) +
+  geom_bar(position="fill", stat = "identity") +
+  labs(x = "Sample Type", y = "Total Reads Per Million", fill = "Viral Family") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
+
+
+
+
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Step 1: Read the data
+df <- read.csv("RPM_Order.csv", header = TRUE)
+
+# Step 2: Pivot to long format (viral families into rows)
+df_long <- df %>%
+  pivot_longer(
+    cols = Adenoviridae:Tobaniviridae,
+    names_to = "Viral_Family",
+    values_to = "RPM"
+  )
+
+# Step 3: Summarise RPM per sample type and viral family
+df_summary <- df_long %>%
+  group_by(Sample_Type, Viral_Family) %>%
+  summarise(Total_RPM = sum(RPM), .groups = "drop")
+
+# Step 4: Plot pie chart for each sample type
+ggplot(df_summary, aes(x = "", y = Total_RPM, fill = Viral_Family)) +
+  geom_bar(position="fill", stat = "identity", width = 1) +
+  coord_polar("y") +
+  facet_wrap(~ Sample_Type) +
+  labs(title = "Viral Family Composition by Swab Type",
+       y = "", x = "", fill = "Viral Family") +
+  theme_void() +
+  theme(legend.position = "right")
+
+```
+
+```{r Number of bird species and viral familys in each order}
+# Load libraries
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(readr)
+
+# Step 1: Read in the data
+df <- read.csv("RPM_Order.csv", header = TRUE)
+
+# Step 2a: Count number of unique bird species per order
+species_count <- df %>%
+  distinct(Bird_order, Bird_species) %>%
+  count(Bird_order, name = "Value") %>%
+  mutate(Category = "Bird species")
+
+# Step 2b: Count number of viral families detected (value > 0) per order
+viral_families <- df %>%
+  select(Bird_order, Adenoviridae:Tobaniviridae) %>%
+  pivot_longer(-Bird_order, names_to = "Viral_Family", values_to = "Abundance") %>%
+  filter(Abundance > 0) %>%
+  distinct(Bird_order, Viral_Family) %>%
+  count(Bird_order, name = "Value") %>%
+  mutate(Category = "Viral families")
+
+# Step 3: Combine both counts
+combined_counts <- bind_rows(species_count, viral_families)
+
+# Step 4: Set custom order of Bird_order
+combined_counts$Bird_order <- factor(combined_counts$Bird_order,
+                                     levels = c("Charadriiformes", "Procellariiformes",
+                                                "Sphenisciformes", "Anseriformes"))
+
+# Step 5: Plot
+ggplot(combined_counts, aes(x = Bird_order, y = Value, fill = Category)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.9)) +
+  geom_text(aes(label = Value),
+            position = position_dodge(width = 0.9), vjust = -0.5, size = 3.5) +
+  labs(x = "Bird Order", y = "Count", fill = "",
+       title = "Bird Species and Viral Families per Bird Order") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+```{r Normalised viral abundance by General_Location Bird Order and Bird Species}
+# Load libraries
+library(ggplot2)
+library(reshape2)
+library(dplyr)
+library(readr)
+
+# Step 1: Load normalised abundance data
+normalised_raw <- read.csv("Normalised.csv", header = TRUE, row.names = 1)
+
+# Step 2: Transpose so families are rows, libraries are columns
+normalised <- t(normalised_raw)
+
+# Step 3: Convert to data frame
+normalised_df <- as.data.frame(normalised)
+
+# Step 4: Add viral family as a column
+normalised_df$family <- rownames(normalised_df)
+
+# Step 5: Reshape to long format
+melted <- melt(normalised_df, id.vars = "family", variable.name = "library", value.name = "abundance")
+
+# Step 6: Load library metadata (e.g. from RPM_Order.csv)
+metadata <- read.csv("RPM_Order.csv", header = TRUE)
+
+# Step 7: Merge metadata with melted data
+melted$library <- as.character(melted$library)
+metadata$Bird_lib <- as.character(metadata$Bird_lib)
+
+merged <- left_join(melted, metadata, by = c("library" = "Bird_lib"))
+
+# Step 8: Create unique label using General_Location, Bird_order, Bird_species, and library ID
+merged <- merged %>%
+  mutate(library_label = paste(General_Location, Bird_order, Bird_species, library, sep = " | "))
+
+# Step 9: Order factor levels by General_Location > Bird_order > Bird_species
+merged$library_label <- factor(merged$library_label,
+                               levels = merged %>%
+                                 distinct(library, library_label, General_Location, Bird_order, Bird_species) %>%
+                                 arrange(General_Location, Bird_order, Bird_species) %>%
+                                 pull(library_label))
+
+# Step 10: Plot
+ggplot(merged, aes(x = library_label, y = family, fill = abundance)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "blue", trans = "log10") +
+  theme_minimal() +
+  labs(x = "Library (Grouped by Region, Order, and Species)", y = "Viral Family", fill = "Normalised Abundance") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8))
+
+write.csv(merged, "merged_data_heatmap.csv", row.names = FALSE)
+
+```
+
+
+```{r Network analysis by Bird Species}
+# Load required libraries
+library(ggplot2)
+library(network)
+library(igraph)
+library(sna)
+library(devtools)
+library(ggnet)
+library(ergm)
+library(intergraph)
+library(RColorBrewer)
+library(ggbipart)
+library(tibble)
+
+# Read in your data
+data_birds <- read.csv("RPM_Order.csv", header = TRUE)
+
+# Optional: clean species names (e.g., replace spaces with underscores)
+data_birds$Bird_species <- gsub(" ", "_", data_birds$Bird_species)
+
+# Step 1: Aggregate by bird species (mean RPM per species)
+library(dplyr)
+bird_virus_matrix <- data_birds %>%
+  group_by(Bird_species) %>%
+  summarise(across(starts_with("Adenoviridae"):last_col(), sum)) %>%
+  column_to_rownames("Bird_species")
+
+# Step 2: Convert to matrix
+bird_virus_matrix <- as.matrix(bird_virus_matrix)
+
+# Step 3: Create bipartite network objects
+bird_net <- bip_init_network(bird_virus_matrix)
+bird_ig  <- bip_init_igraph(bird_virus_matrix)
+
+# Step 4: Plot with ggbipart
+bird_bipart_plot <- bip_ggnet(bird_net, bird_virus_matrix,
+                              label = TRUE)
+
+# Display the plot
+bird_bipart_plot
+
+bird_virus_binary <- ifelse(bird_virus_matrix > 0, 1, 0)
+library(bipartite)
+networklevel(bird_virus_binary, index=c("nestedness", "connectance", "H2"))
+mod <- computeModules(bird_virus_binary)
+summary(mod)
+
+
+```
+
+```{r Number of novel viral species vs non novel species}
+library(ggplot2)
+library(readr)
+library(tidyr)
+library(dplyr)
+
+# Read the CSV
+novel_data <- read_csv("Novel_Not_Novel.csv")
+
+# Clean column names (replace spaces with underscores)
+colnames(novel_data) <- gsub(" ", "_", colnames(novel_data))
+
+# Pivot to long format
+novel_long <- pivot_longer(novel_data, cols = c(Novel, Not_novel),
+                           names_to = "Novelty", values_to = "Count")
+
+# Plot
+ggplot(novel_long, aes(x = Viral_family, y = Count, fill = Novelty)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8)) +
+  labs(title = "Counts of Novel vs Not Novel Viruses by Viral Family",
+       x = "Viral Family",
+       y = "Count") +
+  scale_fill_manual(values = c("Novel" = "#2C7BB6", "Not_novel" = "#D7191C")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+```{r Network analysis of viral sharing by bird species}
+#####Only by bird species####
+
+# Load required libraries
+library(ggplot2)
+library(network)
+library(igraph)
+library(sna)
+library(devtools)
+library(ggnet)
+library(ergm)
+library(intergraph)
+library(RColorBrewer)
+library(ggbipart)
+library(dplyr)
+library(tidyr)
+
+# Read in your data
+data_birds_vs <- read.csv("viral_sharingV2.csv", header = TRUE)
+
+# Clean species names
+data_birds_vs$bird_species <- gsub(" ", "_", data_birds_vs$bird_species)
+
+# Step 1: Summarise RPM per bird species × virus
+bird_virus_matrix <- data_birds_vs %>%
+  group_by(bird_species, virus) %>%
+  summarise(RPM = sum(RPM, na.rm = TRUE), .groups = "drop") %>%
+  pivot_wider(names_from = virus, values_from = RPM, values_fill = 0) %>%
+  column_to_rownames("bird_species")
+
+# Step 2: Convert to matrix
+bird_virus_matrix <- as.matrix(bird_virus_matrix)
+
+# Step 3: Create bipartite network
+bird_net <- bip_init_network(bird_virus_matrix)
+bird_ig  <- bip_init_igraph(bird_virus_matrix)
+
+# Step 4: Plot with ggbipart (edge width reflects RPM by default)
+bird_bipart_plot <- bip_ggnet(
+  bird_net,
+  bird_virus_matrix,
+  label = TRUE
+)
+
+# Show plot
+bird_bipart_plot
+
+
+```
+
+
+
+```{r NMDS on virome composition by Bird Order without 33}
+# Load required packagesq
+library(vegan)
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Step 1: Load the data
+df <- read_csv("RPM_Order.csv")
+
+# Step 2: Remove library 33
+df <- df %>% filter(Bird_lib != 33)
+
+# Step 3: Subset the viral abundance data
+viral_data <- df %>% select(Adenoviridae:Tobaniviridae)
+
+# Step 4: Filter out samples with all zeros
+non_zero_rows <- rowSums(viral_data) > 0
+df_filtered <- df[non_zero_rows, ]
+viral_data_filtered <- viral_data[non_zero_rows, ]
+
+# Step 5: Create Bray-Curtis distance matrix
+bray_dist <- vegdist(viral_data_filtered, method = "bray")
+
+# Step 6: Run NMDS
+set.seed(123)  # for reproducibility
+nmds <- metaMDS(viral_data_filtered, distance = "bray", k = 2)
+
+# Step 7: Plot stress plot (optional)
+stressplot(nmds)
+
+# Step 8: Combine NMDS points with metadata
+mds_points <- as.data.frame(nmds$points)
+mds_combined <- cbind(mds_points, Bird_order = df_filtered$Bird_order)
+
+# Step 9: NMDS plot coloured by bird order
+ggplot(mds_combined, aes(x = MDS1, y = MDS2, color = Bird_order)) +
+  geom_jitter(size = 3, width = 0.1, height = 0.1) +  # Add jitter
+  stat_ellipse(type = "t", linetype = "dashed", size = 1) +
+  labs(title = "NMDS of Viral Communities by Bird Order",
+       x = "NMDS1", y = "NMDS2") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
+
+# Step 10: PERMANOVA testing effect of bird order on beta diversity
+set.seed(123)
+adonis_result <- adonis2(bray_dist ~ Bird_order, data = df_filtered, permutations = 999)
+
+# Step 11: Print result
+print(adonis_result)
+
+#          Df SumOfSqs      R2      F Pr(>F)    
+#Model      3    3.527 0.05431 2.6417  0.001 ***
+
+```
+
+
+```{r NMDS on virome composition by Scavenging without 33}
+# Load required packages
+library(vegan)
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Step 1: Load the data
+df <- read_csv("RPM_Order.csv")
+
+# Step 2: Remove library 33
+df <- df %>% filter(Bird_lib != 33)
+
+# Step 3: Subset the viral abundance data
+viral_data <- df %>% select(Adenoviridae:Tobaniviridae)
+
+# Step 4: Filter out samples with all zeros
+non_zero_rows <- rowSums(viral_data) > 0
+df_filtered <- df[non_zero_rows, ]
+viral_data_filtered <- viral_data[non_zero_rows, ]
+
+# Step 5: Create Bray-Curtis distance matrix
+bray_dist <- vegdist(viral_data_filtered, method = "bray")
+
+# Step 6: Run NMDS
+set.seed(123)  # for reproducibility
+nmds <- metaMDS(viral_data_filtered, distance = "bray", k = 2)
+
+# Step 7: Plot stress plot (optional)
+stressplot(nmds)
+
+# Step 8: Combine NMDS points with metadata
+mds_points <- as.data.frame(nmds$points)
+mds_combined <- cbind(mds_points, Sacvening_status = df_filtered$Sacvening_status)
+
+# Step 9: NMDS plot coloured by General Location
+ggplot(mds_combined, aes(x = MDS1, y = MDS2, color = Sacvening_status)) +
+  geom_jitter(size = 3, width = 0.1, height = 0.1) +  # Adds jitter
+  stat_ellipse(type = "t", linetype = "dashed", size = 1) +
+  labs(title = "NMDS of Viral Communities by Sacvening_status",
+       x = "NMDS1", y = "NMDS2") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
+
+# Step 10: PERMANOVA testing effect of General_Location on beta diversity
+set.seed(123)
+adonis_result <- adonis2(bray_dist ~ Sacvening_status, data = df_filtered, permutations = 999)
+
+# Step 11: Print result
+print(adonis_result)
+#          Df SumOfSqs      R2      F Pr(>F)   
+#Model      2    4.101 0.06315 4.6849  0.001 ***
+
+
+
+set.seed(123)
+adonis2(bray_dist ~ Bird_order + General_Location + Sample_Type + Sacvening_status + Migration, 
+        data = df_filtered, method = "bray", by = "margin", permutations = 999)
+
+print(adonis_result)
+
+betadisper_result <- betadisper(bray_dist, df_filtered$Sacvening_status)
+anova(betadisper_result)
+
+plot(betadisper_result)      # centroids + hulls
+boxplot(betadisper_result)   # distance to centroid per group
+
+permutest(betadisper_result, pairwise = TRUE)
+
+boxplot(betadisper_result, main = "Distance to Centroid by Scavenging Status",
+        ylab = "Distance to group centroid")
+
+```
+
+```{r NMDS Scavenging, further analysis without 33}
+library(indicspecies)
+
+# community data matrix (e.g., abundance or presence/absence)
+comm <- viral_data_filtered
+
+# grouping factor
+group <- df_filtered$Sacvening_status
+
+# Run the indicator species analysis (default is IndVal.g, which handles abundance data)
+set.seed(123)  # for reproducibility
+indval_result <- multipatt(comm, group, control = how(nperm=999))
+
+summary(indval_result)
+
+# Extract the viral families identified as indicators
+indicator_taxa <- c("Adenoviridae", "Astroviridae", "Coronaviridae", "Papillomaviridae")
+
+# Subset the viral abundance data for these taxa
+indicator_data <- viral_data_filtered[, indicator_taxa]
+
+# Combine with scavenging status metadata
+plot_data <- cbind(df_filtered["Sacvening_status"], indicator_data)
+
+# Optional: rename the metadata column if needed
+colnames(plot_data)[1] <- "Scavenging_status"
+
+library(tidyr)
+
+plot_data_long <- plot_data %>%
+  pivot_longer(
+    cols = all_of(indicator_taxa),
+    names_to = "Viral_Family",
+    values_to = "Abundance"
+  )
+
+library(ggplot2)
+
+ggplot(plot_data_long, aes(x = Scavenging_status, y = Abundance, fill = Scavenging_status)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.6) +   # boxplots without outliers shown twice
+  geom_jitter(width = 0.2, size = 1.5, alpha = 0.7) + # jittered points
+  facet_wrap(~ Viral_Family, scales = "free_y") +   # separate panels for each viral family
+  labs(title = "Indicator Viral Families Abundance by Scavenging Status",
+       x = "Scavenging Status",
+       y = "Viral Abundance (RPM or Counts)") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+library(ggpubr)
+
+# Define pairwise comparisons
+my_comparisons <- list(
+  c("No", "Occasionally"),
+  c("No", "Yes"),
+  c("Occasionally", "Yes")
+)
+
+ggplot(plot_data_long, aes(x = Scavenging_status, y = Abundance, fill = Scavenging_status)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.6) +
+  geom_jitter(width = 0.2, size = 1.5, alpha = 0.7) +
+  facet_wrap(~ Viral_Family, scales = "free_y") +
+  labs(title = "Indicator Viral Families Abundance by Scavenging Status",
+       x = "Scavenging Status",
+       y = "Viral Abundance (RPM or Counts)") +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  stat_compare_means(comparisons = my_comparisons, 
+                     method = "wilcox.test",   # non-parametric test
+                     label = "p.signif",       # show significance levels (*, **, ***)
+                     hide.ns = TRUE)           # hide non-significant comparisons
+
+
+```
+
+```{r Shannon, Bird_Order}
+# Load required libraries
+library(dplyr)
+library(ggplot2)
+library(vegan)  # For diversity() function
+
+# Read in your data
+data_birds <- read.csv("RPM_Order.csv", header = TRUE)
+
+# Step 1: Identify viral family columns
+viral_cols <- which(names(data_birds) %in% c("Adenoviridae", "Anelloviridae", "Astroviridae", 
+                                             "Caliciviridae", "Coronaviridae", "Flaviviridae",
+                                             "Hepadnaviridae", "Orthoherpesviridae", "Orthomyxoviridae", 
+                                             "Papillomaviridae", "Paramyxoviridae", "Picornaviridae", 
+                                             "Pneumoviridae", "Polyomaviridae", "Sedoreoviridae", 
+                                             "Spinareoviridae", "Tobaniviridae"))
+
+# Step 2: Calculate Shannon index per sample
+# vegan::diversity requires non-negative abundance values
+data_birds$shannon <- diversity(data_birds[, viral_cols], index = "shannon")
+
+# Step 3: Summarize Shannon index by Bird_order
+order_summary <- data_birds %>%
+  group_by(Bird_order) %>%
+  summarise(mean_shannon = mean(shannon),
+            sd_shannon = sd(shannon),
+            n = n(),
+            se_shannon = sd_shannon / sqrt(n))
+
+# View summary table
+print(order_summary)
+
+# Step 4: Plot Shannon index per Bird_order
+ggplot(data_birds, aes(x = Bird_order, y = shannon)) +
+  geom_boxplot(fill = "skyblue", color = "black") +
+  geom_jitter(width = 0.2, height = 0, alpha = 0.5) +
+  labs(title = "Shannon Diversity Index per Bird Order",
+       y = "Shannon Diversity (H')",
+       x = "Bird Order") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Step 5: Kruskal-Wallis test for Shannon index
+kruskal.test(shannon ~ Bird_order, data = data_birds)
+#Kruskal-Wallis chi-squared = 5.1472, df = 3, p-value = 0.1613
+
+```
+
+```{r Shannon, Scavenging}
+# Load required libraries
+library(dplyr)
+library(ggplot2)
+library(vegan)     # For diversity() function
+library(FSA)       # For dunnTest()
+library(ggpubr)    # For stat_pvalue_manual()
+
+# Read in your data
+data_birds <- read.csv("RPM_Order.csv", header = TRUE)
+
+# Identify viral family columns
+viral_cols <- which(names(data_birds) %in% c(
+  "Adenoviridae", "Anelloviridae", "Astroviridae", 
+  "Caliciviridae", "Coronaviridae", "Flaviviridae",
+  "Hepadnaviridae", "Orthoherpesviridae", "Orthomyxoviridae", 
+  "Papillomaviridae", "Paramyxoviridae", "Picornaviridae", 
+  "Pneumoviridae", "Polyomaviridae", "Sedoreoviridae", 
+  "Spinareoviridae", "Tobaniviridae"))
+
+# Calculate Shannon index
+data_birds$shannon <- diversity(data_birds[, viral_cols], index = "shannon")
+
+# Summary stats
+sacvening_summary <- data_birds %>%
+  group_by(Sacvening_status) %>%
+  summarise(mean_shannon = mean(shannon),
+            sd_shannon = sd(shannon),
+            n = n(),
+            se_shannon = sd_shannon / sqrt(n))
+
+# Kruskal-Wallis test
+kruskal_result <- kruskal.test(shannon ~ Sacvening_status, data = data_birds)
+print(kruskal_result)
+
+# Dunn's post hoc test (Benjamini-Hochberg correction)
+dunn_result <- dunnTest(shannon ~ Sacvening_status, data = data_birds, method = "bh")
+dunn_df <- dunn_result$res
+
+# Filter significant comparisons (adjusted p < 0.05)
+sig_dunn <- dunn_df %>% 
+  filter(P.adj < 0.05) %>%
+  mutate(group1 = gsub(" -.*", "", Comparison),
+         group2 = gsub(".*- ", "", Comparison),
+         y.position = max(data_birds$shannon, na.rm = TRUE) + seq(0.05, 0.2, length.out = n())) %>%
+  select(group1, group2, p.adj = P.adj, y.position)
+
+# Create the plot with annotations
+ggplot(data_birds, aes(x = Sacvening_status, y = shannon)) +
+  geom_boxplot(fill = "lightcoral", color = "black", outlier.shape = NA) +
+  geom_jitter(width = 0.2, height = 0, alpha = 0.5) +
+  labs(title = "Shannon Diversity Index by Sacvening Status",
+       y = "Shannon Diversity (H')",
+       x = "Sacvening Status") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  stat_pvalue_manual(sig_dunn, label = "p.adj", tip.length = 0.01)
+
+dunn_result <- dunnTest(shannon ~ Sacvening_status, data = data_birds, method = "bh") 
+dunn_result
+
+```
+
+
+```{r NMDS on virome composition by Scavenging for Non-avian viruses}
+# Load required packages
+library(vegan)
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Step 1: Load the data
+df <- read_csv("NotAvianRPM.csv")
+
+# Step 3: Subset the viral abundance data
+viral_data <- df %>% select(Ackermannviridae:Unclassified)
+
+# Step 4: Filter out samples with all zeros
+non_zero_rows <- rowSums(viral_data) > 0
+df_filtered <- df[non_zero_rows, ]
+viral_data_filtered <- viral_data[non_zero_rows, ]
+
+# Step 5: Create Bray-Curtis distance matrix
+bray_dist <- vegdist(viral_data_filtered, method = "bray")
+
+# Step 6: Run NMDS
+set.seed(123)  # for reproducibility
+nmds <- metaMDS(viral_data_filtered, distance = "bray", k = 2)
+
+# Step 7: Plot stress plot (optional)
+stressplot(nmds)
+
+# Step 8: Combine NMDS points with metadata
+mds_points <- as.data.frame(nmds$points)
+mds_combined <- cbind(mds_points, Sacvening_status = df_filtered$Sacvening_status)
+
+# Step 9: NMDS plot coloured by General Location
+ggplot(mds_combined, aes(x = MDS1, y = MDS2, color = Sacvening_status)) +
+  geom_jitter(size = 3, width = 0.1, height = 0.1) +  # Adds jitter
+  stat_ellipse(type = "t", linetype = "dashed", size = 1) +
+  labs(title = "NMDS of Viral Communities by Sacvening_status",
+       x = "NMDS1", y = "NMDS2") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
+
+# Step 10: PERMANOVA testing effect of General_Location on beta diversity
+set.seed(123)
+adonis_result <- adonis2(bray_dist ~ Sacvening_status, data = df_filtered, permutations = 999)
+
+# Step 11: Print result
+print(adonis_result)
+
+#Permutation test for adonis under reduced model
+#Permutation: free
+#Number of permutations: 999
+
+#adonis2(formula = bray_dist ~ Sacvening_status, data = df_filtered, permutations = 999)
+#          Df SumOfSqs      R2      F Pr(>F)    
+#Model      2    2.264 0.03305 3.4178  0.001 ***
+
+#There is a statistically significant difference in virome composition between scavenging categories, but the effect is small (only 3.3% of variation explained)
+
+set.seed(123)
+adonis2(bray_dist ~ Bird_order + General_Location + Sample_Type + Sacvening_status + Migration, 
+        data = df_filtered, method = "bray", by = "margin", permutations = 999)
+
+print(adonis_result)
+
+#adonis2(formula = bray_dist ~ Bird_order + General_Location + Sample_Type + Sacvening_status + Migration, data = df_filtered, permutations = 999, method = "bray", by = "margin")
+#                  Df SumOfSqs      R2      F Pr(>F)    
+#Bird_order         3    1.913 0.02792 2.1386  0.001 ***
+#General_Location   3    1.897 0.02769 2.1210  0.002 ** 
+#Sample_Type        1    2.893 0.04223 9.7049  0.001 ***
+#Sacvening_status   2    1.387 0.02025 2.3262  0.008 ** 
+#Migration          2    0.874 0.01276 1.4659  0.090 .  
+#Residual         191   56.937 0.83118                  
+#Total            202   68.501 1.00000
+
+
+
+```
+
+```{r Shannon, Scavenging non-avian viruses}
+# Load required libraries
+library(dplyr)
+library(ggplot2)
+library(vegan)     # For diversity() function
+library(FSA)       # For dunnTest()
+library(ggpubr)    # For stat_pvalue_manual()
+
+# Read in your data
+data_birds <- read.csv("NotAvianRPM.csv", header = TRUE)
+
+# Identify viral family columns
+viral_cols <- which(names(data_birds) == "Ackermannviridae") :
+              which(names(data_birds) == "Unclassified")
+
+
+# Calculate Shannon index
+data_birds$shannon <- diversity(data_birds[, viral_cols], index = "shannon")
+
+# Summary stats
+sacvening_summary <- data_birds %>%
+  group_by(Sacvening_status) %>%
+  summarise(mean_shannon = mean(shannon),
+            sd_shannon = sd(shannon),
+            n = n(),
+            se_shannon = sd_shannon / sqrt(n))
+
+# Kruskal-Wallis test
+kruskal_result <- kruskal.test(shannon ~ Sacvening_status, data = data_birds)
+print(kruskal_result)
+
+# Dunn's post hoc test (Benjamini-Hochberg correction)
+dunn_result <- dunnTest(shannon ~ Sacvening_status, data = data_birds, method = "bh")
+dunn_df <- dunn_result$res
+
+# Filter significant comparisons (adjusted p < 0.05)
+sig_dunn <- dunn_df %>% 
+  filter(P.adj < 0.05) %>%
+  mutate(group1 = gsub(" -.*", "", Comparison),
+         group2 = gsub(".*- ", "", Comparison),
+         y.position = max(data_birds$shannon, na.rm = TRUE) + seq(0.05, 0.2, length.out = n())) %>%
+  select(group1, group2, p.adj = P.adj, y.position)
+
+# Create the plot with annotations
+ggplot(data_birds, aes(x = Sacvening_status, y = shannon)) +
+  geom_boxplot(fill = "lightcoral", color = "black", outlier.shape = NA) +
+  geom_jitter(width = 0.2, height = 0, alpha = 0.5) +
+  labs(title = "Shannon Diversity Index by Sacvening Status",
+       y = "Shannon Diversity (H')",
+       x = "Sacvening Status") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  stat_pvalue_manual(sig_dunn, label = "p.adj", tip.length = 0.01)
+
+dunn_result <- dunnTest(shannon ~ Sacvening_status, data = data_birds, method = "bh") 
+dunn_result
+
+```
+
