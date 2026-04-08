@@ -1,0 +1,206 @@
+﻿Bird_lib,Bird_order,Bird_species,Location,General_Location,Sample_Type,Sacvening_status,Migration,Adenoviridae,Anelloviridae,Astroviridae,Caliciviridae,Coronaviridae,Flaviviridae,Hepadnaviridae,Orthoherpesviridae,Orthomyxoviridae,Papillomaviridae,Paramyxoviridae,Picornaviridae,Pneumoviridae,Polyomaviridae,Sedoreoviridae,Spinareoviridae,Tobaniviridae
+1,Charadriiformes,Chatham Island oystercatcher,Chathams,Chathams,oral,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,9.375221714,0,0,0,0,0
+2,Charadriiformes,Chatham Island oystercatcher,Chathams,Chathams,oral,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,136.8158875,0,0
+3,Charadriiformes,Chatham Island oystercatcher,Chathams,Chathams,cloacal,No,Sedentary,0,0,0,16.57534359,0,0,0,0,0,0,0,23.28213001,0,0,0,0,0
+4,Charadriiformes,Chatham Island oystercatcher,Chathams,Chathams,cloacal,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2.055338265,9797.41405,0
+5,Procellariiformes,Fairy prion,Mangere,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,20.59024129,0,0,0,0,0,0,0
+6,Procellariiformes,Fairy prion,Mangere,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,Procellariiformes,Fairy prion,Mangere,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,170.2061473,0,0,0,0,0
+8,Procellariiformes,Fairy prion,Mangere,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,9.48830292,0,0,0,1222.072389,0
+9,Procellariiformes,Grey-backed storm petrel,Mangere,Chathams,cloacal,No,Migratory,0,0,0,0,0,749.6255496,0,0,0,0,0,0,0,0,0,0,0
+10,Procellariiformes,Sooty shearwater,Mangere,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0.572274954,0,0,0,0,0,0,0
+11,Procellariiformes,Sooty shearwater,Mangere,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0.432473267,0,6.952839439,0,0,0,0,0
+12,Procellariiformes,Sooty shearwater,Mangere,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,Procellariiformes,Sooty shearwater,Mangere,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0.591182212,0,0,0,0,0
+14,Procellariiformes,Sooty shearwater,Mangere,Chathams,cloacal,No,Migratory,33.76120851,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,Procellariiformes,Sooty shearwater,Mangere,Chathams,cloacal,No,Migratory,6.28732444,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,Procellariiformes,White-faced storm petrel,Mangere,Chathams,cloacal,No,Migratory,0.239559725,0,0,0,0,0,0,0,0,0,0,0.626540818,0,0,0,0,0
+17,Procellariiformes,White-faced storm petrel,Mangere,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,661.0719467,0,0,0,0,0
+18,Procellariiformes,Broad-billed prion,Rangitira,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,14.75164334,0,0,0,0,0,0,0
+19,Procellariiformes,Broad-billed prion,Rangitira,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Procellariiformes,Broad-billed prion,Rangitira,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,Procellariiformes,Broad-billed prion,Rangitira,Chathams,cloacal,No,Migratory,19.40576803,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+22,Procellariiformes,Broad-billed prion,Rangitira,Chathams,cloacal,No,Migratory,0.508873114,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,Procellariiformes,Broad-billed prion,Rangitira,Chathams,cloacal,No,Migratory,0.160219413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,Charadriiformes,Chatham Island snipe,Rangitira,Chathams,oral,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,Charadriiformes,Chatham Island snipe,Rangitira,Chathams,oral,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,Charadriiformes,Chatham Island snipe,Rangitira,Chathams,oral,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+27,Charadriiformes,Chatham Island snipe,Rangitira,Chathams,cloacal,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+28,Charadriiformes,Chatham Island snipe,Rangitira,Chathams,cloacal,No,Sedentary,0,0,0,0,0,1.400517102,0,0,0,0,0,101.9313853,0,0,274.9390135,0,0
+29,Charadriiformes,Chatham Island snipe,Rangitira,Chathams,cloacal,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,30.75869562,0,0,0,0,0
+30,Procellariiformes,Sooty shearwater,Rangitira,Chathams,oral,No,Migratory,3.45671182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,Procellariiformes,Sooty shearwater,Rangitira,Chathams,cloacal,No,Migratory,1.938989038,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+32,Procellariiformes,White-faced storm petrel,Rangitira,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+33,Procellariiformes,White-faced storm petrel,Rangitira,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,285.064203,0,0,0
+34,Procellariiformes,White-faced storm petrel,Rangitira,Chathams,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,Procellariiformes,White-faced storm petrel,Rangitira,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,0.431797098,0,0,0,13.73114771,0,0,0,0,0
+36,Procellariiformes,White-faced storm petrel,Rangitira,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,321.1348619,0,0,0,37.94236841,0,0,0,0,0
+37,Procellariiformes,White-faced storm petrel,Rangitira,Chathams,cloacal,No,Migratory,0,0,0,0,0,0,0,16.55774596,0,0,0,0,0,0,0,0,0
+38,Procellariiformes,Common diving petrel,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,Procellariiformes,Common diving petrel,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+40,Procellariiformes,Cook's petrel,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+41,Procellariiformes,Cook's petrel,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,0,5.706424717,0,0,0,0,5.53967854,0,0,0,0,0
+42,Procellariiformes,Mottled petrel,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,0,1.28412638,0,0,0,0,0,0,0,0,0,0
+43,Procellariiformes,Mottled petrel,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,1444.285779,0,0,0,18.22940511,0,0,0,0,0,0,0
+44,Procellariiformes,Mottled petrel,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,0,0.496948858,0,0,0,0,0,0,0,0,0,0
+45,Procellariiformes,Mottled petrel,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,10.38427913,143.4429438,0,0,0,0,0,0,0,0,0,0
+46,Procellariiformes,Sooty shearwater,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+47,Procellariiformes,Sooty shearwater,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,0,0,1.054230125,0,0,0,0,0,0,0,0,0
+48,Procellariiformes,Whenua Hou diving petrel,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+49,Procellariiformes,Whenua Hou diving petrel,Whenua Hou,Rakiura Region,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,Procellariiformes,Whenua Hou diving petrel,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,Procellariiformes,Whenua Hou diving petrel,Whenua Hou,Rakiura Region,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0.143353383,0,0,0,0,0,0,0
+52,Anseriformes,Auckland Island teal,Adams,Subantartics,oral,No,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+53,Anseriformes,Auckland Island teal,Adams,Subantartics,cloacal,No,Sedentary,0,0,0,0,0,0,0,0,0,39.31335982,0,26.71930395,0,0,0,0,18.60398527
+54,Charadriiformes,Subantarctic skua,Adams,Subantartics,oral,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,Charadriiformes,Subantarctic skua,Adams,Subantartics,cloacal,Yes,Migratory,15.6966478,0,0,0,0,0,0,0.242107678,0,0,0,49.22856121,0,0,0,0,0
+56,Procellariiformes,Antipodean albatross,Adams,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,49.23383335,0,0,0,0,0,0,0,0,0
+57,Procellariiformes,Antipodean albatross,Adams,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,1.787715284,0,0,0,0,0,0,0,0,0
+58,Procellariiformes,Northern giant petrel,Adams,Subantartics,oral,Yes,Migratory,0.149891669,0,0,0,0,0,0,0,0,0,0,8.131623022,0,0,0,0,0
+59,Procellariiformes,Northern giant petrel,Adams,Subantartics,cloacal,Yes,Migratory,23.37413518,0,0,0,0,0,0,0,0,0,0,5.336560544,0,0,0,0,0
+60,Procellariiformes,Sooty shearwater,Adams,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+61,Procellariiformes,Sooty shearwater,Adams,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,Charadriiformes,Subantarctic skua,Adams,Subantartics,oral,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+63,Charadriiformes,Subantarctic skua,Adams,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,26.05806321,0,0,0.496006642,0,0
+64,Procellariiformes,Antipodean albatross,Antipodes,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,0.647877136,0,9.981357133,0,0,0,0,0,0,0
+65,Procellariiformes,Antipodean albatross,Antipodes,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,0.105740668,0,20.63705369,0,0,0,0,0,0,0
+66,Procellariiformes,Antipodean albatross,Antipodes,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,37.30976297,0,0,0,0,0,0,0,0,0
+67,Procellariiformes,Antipodean albatross,Antipodes,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,12.12838292,0,0,0,0,0,0,0,0,0
+68,Procellariiformes,Northern giant petrel,Antipodes,Subantartics,oral,Yes,Migratory,9.822187557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+69,Procellariiformes,Northern giant petrel,Antipodes,Subantartics,oral,Yes,Migratory,94.16220054,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,Procellariiformes,Northern giant petrel,Antipodes,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+71,Procellariiformes,Northern giant petrel,Antipodes,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+72,Charadriiformes,Subantarctic skua,Antipodes,Subantartics,oral,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+73,Charadriiformes,Subantarctic skua,Antipodes,Subantartics,cloacal,Yes,Migratory,0,0,5089.687146,0,0,0,0,0,0,0,0,1.415391988,0,0,0.124887528,0,0
+74,Procellariiformes,White-chinned petrel,Antipodes,Subantartics,oral,Occasionally,Migratory,0,0,63.84900239,0,0,0,0,0,0,261.5467618,0,0,0,0,0,0,0
+75,Procellariiformes,White-chinned petrel,Antipodes,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,709.6379476,0,0,0,0,0,0,0
+76,Procellariiformes,White-chinned petrel,Antipodes,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+77,Procellariiformes,White-chinned petrel,Antipodes,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0.125320892,0,0,14.41190258,11.57129569,0,0,1.942473826,0,0
+79,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,10.46463116,5.940769402,2287.93028,0,0,0,0,0
+80,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2.415924093,0,0
+81,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0.222067938,0.348963902,9.977195209,0,0,3.997222882,0,0
+82,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.499904925,0,0
+83,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,cloacal,No,Migratory,0,0,0,3.619231647,0,0,0,0,0,0,0.226201978,0,0,0,1.036759066,0,0
+84,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0.061710814,0,0,8.073831559,0,0,0,0.987373031,0,0
+85,Sphenisciformes,Erect-crested penguin,Bounties,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+86,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,0.310188787,0,0,0,0,0,0,0,0,0
+87,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,4.248221987,0,0,0,0,0,0,0,0,0
+88,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,1.819751897,0,0.094943577,0,0,0.094943577,0,0
+89,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,1.115810413,0,0,0,0,0,0,0,0,0
+90,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,5.464439958,0,0,0,0,0,0,0,0,0
+91,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,16.8924434,0,0,0,0,0,0,0,0,0
+92,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,20.4838443,0,0,0,0,0,0,0,0,0
+93,Procellariiformes,Salvin's mollymawk,Bounties,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,11.17552479,0,0,0.091477693,0,0,0,0,0,0
+94,Charadriiformes,Antarctic tern,Campbell ,Subantartics,oral,No,Migratory,960.936328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Charadriiformes,Antarctic tern,Campbell ,Subantartics,cloacal,No,Migratory,629.8092972,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+96,Sphenisciformes,Eastern rockhopper penguin,Campbell ,Subantartics,oral,No,Migratory,0,0,0.098901865,0,0,0,0,0,0,0,0,9.197873406,0,0,0,0,0
+97,Sphenisciformes,Eastern rockhopper penguin,Campbell ,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,Sphenisciformes,Eastern rockhopper penguin,Campbell ,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,517.7808226,0,0,0,0,0
+99,Sphenisciformes,Eastern rockhopper penguin,Campbell ,Subantartics,cloacal,No,Migratory,0,0,0,28.34613182,0,0,0,0,0,0,0,0.14180156,0,0,0,0,0
+100,Sphenisciformes,Erect-crested penguin,Campbell ,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,8976.521351,0,0,0,0,0
+101,Sphenisciformes,Erect-crested penguin,Campbell ,Subantartics,cloacal,No,Migratory,0,0,18.05859945,0,0,0,0,0,0,0,0,9.409961605,0,0,0,0,0
+102,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,oral,No,Local migration ,0,0,0.49203976,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+103,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+104,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.353125569,0,0
+105,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,oral,No,Local migration ,0,0,0.238536724,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43.06096222,0,0
+107,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0.154254358,0,0,0.277657845,0,0
+108,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,2.231357661,0,0,0.096317597,0,0
+109,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14079.85314,0,0
+110,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+111,Sphenisciformes,Yellow-eyed penguin,Campbell ,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.106901529,0,0
+112,Procellariiformes,Light-mantled sooty albatross,Campbell ,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,0.118276482,0,0,0,0,0,0,0
+113,Procellariiformes,Light-mantled sooty albatross,Campbell ,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+114,Procellariiformes,Northern giant petrel,Campbell ,Subantartics,oral,Yes,Migratory,70.67333499,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+115,Procellariiformes,Northern giant petrel,Campbell ,Subantartics,oral,Yes,Migratory,5.657123882,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+116,Procellariiformes,Northern giant petrel,Campbell ,Subantartics,oral,Yes,Migratory,520.9006423,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+117,Procellariiformes,Northern giant petrel,Campbell ,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+118,Procellariiformes,Northern giant petrel,Campbell ,Subantartics,cloacal,Yes,Migratory,5.097030803,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+119,Procellariiformes,Northern giant petrel,Campbell ,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+120,Charadriiformes,Red-billed gull,Campbell ,Subantartics,oral,Yes,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+121,Charadriiformes,Red-billed gull,Campbell ,Subantartics,cloacal,Yes,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+122,Charadriiformes,Southern black-backed gull,Campbell ,Subantartics,oral,Yes,Sedentary,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+123,Charadriiformes,Southern black-backed gull,Campbell ,Subantartics,cloacal,Yes,Sedentary,0,0,0,0,14959.31808,0,0,0,0,0,0,0,0,0,0,0,0
+124,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,2.262855734,0,0,0,0,0,0,0,0,0
+125,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,10.76536145,0,0,0,0.440151064,0,0,0,0,0
+126,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,oral,Occasionally,Migratory,102.2786159,0,0,0,0,0,0,23.56968553,0,0,0,0.214967816,0,0,0,0,0
+127,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,oral,Occasionally,Migratory,8.645126149,0,0,0,0,0,0,5.538283939,0,0,0,0,0,0,0,0,0
+128,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,oral,Occasionally,Migratory,0,0,0,0,0,0,0,3.0612738,0,0,0,0,0,0,0,0,0
+129,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,105.8363434,0,0,0,0,0,0,0,0,0
+130,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0.092135152,104.680888,0,0,0,0,0,0,0,0,0
+131,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,124.9909505,0,0,0,0,0,0,0,0,0
+132,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,cloacal,Occasionally,Migratory,0.377837317,0,0,0,0,0,0,2976.186765,0,0.188918659,0,0,0,0,0,0,0
+133,Procellariiformes,Southern royal albatross,Campbell ,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+134,Procellariiformes,Grey-backed storm petrel,Campbell ,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+135,Procellariiformes,Grey-backed storm petrel,Campbell ,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+136,Charadriiformes,Subantarctic skua,Campbell ,Subantartics,oral,Yes,Migratory,8.178194228,0,0,0,0,0,0,0,0,36.23895936,0,0,0,0,0,0,0
+137,Charadriiformes,Subantarctic skua,Campbell ,Subantartics,oral,Yes,Migratory,0,0,0,0,0,0,0,131.3020939,0,0.261557956,0,0,0,0,0,0,0
+138,Charadriiformes,Subantarctic skua,Campbell ,Subantartics,oral,Yes,Migratory,0,0,0,0,0,0,0,0,0,5.194225629,0,16.85635674,0,0,0,0,0
+139,Charadriiformes,Subantarctic skua,Campbell ,Subantartics,cloacal,Yes,Migratory,0,0,0,0.159024041,2.961822761,0,0,0,0,0,0,0,0,0,0,0,0
+140,Charadriiformes,Subantarctic skua,Campbell ,Subantartics,cloacal,Yes,Migratory,0,0,129.5353233,5.389317019,0,0,0,0,0,0,0,0,0,0,0,0,0
+141,Charadriiformes,Subantarctic skua,Campbell ,Subantartics,cloacal,Yes,Migratory,0,0,3.811819549,0,0,0,0,0,0,0,0,1.477615443,0,0,0,0,0
+142,Procellariiformes,Northern giant petrel,Enderby,Subantartics,oral,Yes,Migratory,13.42508687,0,0,0,0,0,0,0,0,0.11776392,0,0,12.58111211,0,0,0,0
+143,Procellariiformes,Northern giant petrel,Enderby,Subantartics,oral,Yes,Migratory,0,0,0,0,0,0,0,0,0,2.275815649,0,0,0,0,0,0,0
+144,Procellariiformes,Northern giant petrel,Enderby,Subantartics,cloacal,Yes,Migratory,14.34683956,0,0,52.07762104,0,0,0,0,0,0,0,46.97886679,0,0,0,0,0
+145,Procellariiformes,Northern giant petrel,Enderby,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,2.662860708,0,0,0,0.469916595,0,0,0,0,0
+146,Sphenisciformes,Yellow-eyed penguin,Enderby,Subantartics,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,126.4850433,0,0,0,0,0
+147,Sphenisciformes,Yellow-eyed penguin,Enderby,Subantartics,oral,No,Local migration ,0,0,0,0,0,0,0,31.40963024,0,0,0,0,0,0,0,0,0
+148,Sphenisciformes,Yellow-eyed penguin,Enderby,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,4.386684995,0,0,2.515232352,0,0
+149,Sphenisciformes,Yellow-eyed penguin,Enderby,Subantartics,cloacal,No,Local migration ,0,0,0,0,0,0,0,0.126145162,0,0,0,13.91801616,0,0,0,0,0
+150,Sphenisciformes,Eastern rockhopper penguin,Enderby,Subantartics,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+151,Sphenisciformes,Eastern rockhopper penguin,Enderby,Subantartics,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+152,Charadriiformes,Subantarctic skua,Enderby,Subantartics,oral,Yes,Migratory,7.339656519,0,1.603323026,0,0,0,0,0,0,161.8821815,0,0,0,0,9.86934396,0,0
+153,Charadriiformes,Subantarctic skua,Enderby,Subantartics,cloacal,Yes,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+154,Procellariiformes,Southern royal albatross,Enderby,Subantartics,oral,Occasionally,Migratory,1.418701017,0,0,0,0,0,0,12.22392388,0,35.0386158,0,230.6543909,0,0,0,0,0
+155,Procellariiformes,Southern royal albatross,Enderby,Subantartics,oral,Occasionally,Migratory,0.669192659,0,0,0,0,0,0,0.648914094,0,71.48194316,0,5.515769799,0,0,0,0,0
+156,Procellariiformes,Southern royal albatross,Enderby,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,33.29903759,0,0,0,230.6380346,0,0,0,0,0
+157,Procellariiformes,Southern royal albatross,Enderby,Subantartics,cloacal,Occasionally,Migratory,0,0,0,0,0,0,0,27.55298056,0,0,0,0,0,0,0,0,0
+158,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+159,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+160,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,oral,No,Migratory,0,0,0,0,0,174.1294732,0,0,0,0,0,0,0,0,0,0,0
+161,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,oral,No,Migratory,0,0,0,0,0,1.191657541,0,0,0,0,0,0,0,0,0,0,0
+162,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+163,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,cloacal,No,Migratory,6.714412474,0,0,0,271.7436746,0,0,0,0,0,0,18.35152089,0,0,0,0,0
+164,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,cloacal,No,Migratory,0,0,24.63200288,0,10.38641514,0,0,9.909974079,0,0,0,0,0,0,0,0,0
+165,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,cloacal,No,Migratory,0,0,0,0,0,10.07709926,0,0,0,0,0,3.117665441,0,0,47.83102205,0,0
+166,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,cloacal,No,Migratory,0,0,2.221538261,0,0,3.232622982,0,0,0,0,0,71.33131505,0,0,1.666153695,0,0
+167,Charadriiformes,Bar-tailed godwit,Motueka Spit,Mainland,cloacal,No,Migratory,7.817671336,0,88.49065834,0,0,0,0,67.68339543,0,0,0,0,0,0,0,0,0
+168,Charadriiformes,Banded dotterel,Firth of Thames,Mainland,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+169,Charadriiformes,Banded dotterel,Firth of Thames,Mainland,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+170,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+171,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,oral,No,Migratory,0,0,0,0,0,14.9099676,0,0,0,0,0,0,0,0,0,0,0
+172,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,oral,No,Migratory,0,0,20.54167418,0,3.082777254,0,0,17.50468075,0,0,0,0,0,0,0,0,0
+173,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,oral,No,Migratory,339.6626607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+174,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,cloacal,No,Migratory,0,0,0,0,0,0.588317332,0,0,0,0,0,0,0,0,0,0,0
+175,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,cloacal,No,Migratory,0,0,0,0,0,0,0,2.60011423,0,0,0,10.20544835,0,0,0,0,0
+176,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,3.029442602,0,0,0,0,0
+177,Charadriiformes,Bar-tailed godwit,Firth of Thames,Mainland,cloacal,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,2.597278426,0,0,0,0,0
+178,Charadriiformes,Red knot,Firth of Thames,Mainland,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+179,Charadriiformes,Red knot,Firth of Thames,Mainland,oral,No,Migratory,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+180,Charadriiformes,Red knot,Firth of Thames,Mainland,cloacal,No,Migratory,0,0,0,75.59656248,0,0,0,0,0,0,0,13.73702441,0,0,0,0,0
+181,Charadriiformes,Red knot,Firth of Thames,Mainland,cloacal,No,Migratory,0.535513646,0,67.20696261,0,0,0,0,3.845961642,55.45000392,0,0,337.7143786,0,0,2.020346938,0,0
+182,Charadriiformes,South Island pied oystercatcher,Firth of Thames,Mainland,oral,No,Local migration ,0,0,0.961341687,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+183,Charadriiformes,South Island pied oystercatcher,Firth of Thames,Mainland,cloacal,No,Local migration ,111.3331714,0,1210.617449,622.7845372,0,0,0,0,0,0,0,8691.645562,0,0,0,0,0
+184,Charadriiformes,Wrybill,Firth of Thames,Mainland,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+185,Charadriiformes,Wrybill,Firth of Thames,Mainland,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+186,Charadriiformes,Wrybill,Firth of Thames,Mainland,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+187,Charadriiformes,Wrybill,Firth of Thames,Mainland,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+188,Charadriiformes,Wrybill,Firth of Thames,Mainland,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+189,Charadriiformes,Wrybill,Firth of Thames,Mainland,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+190,Charadriiformes,Wrybill,Firth of Thames,Mainland,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+191,Charadriiformes,Wrybill,Firth of Thames,Mainland,cloacal,No,Local migration ,0,0,0,0,0,0,0,46443.07934,0,0,0,0,0,0,0,0,0
+192,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,oral,Yes,Sedentary,0,0,0,0,0,0,0,0,0,111.6985944,0,0,0,0,0,0,0
+193,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,oral,Yes,Sedentary,172.0818012,0,0.097423175,0.324743916,0,0,0,0,0,32.47439163,0,0.259795133,0,0,0,0,0
+194,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,oral,Yes,Sedentary,9.886138883,0.440783262,0,0,0,0,0,0,0,58.05745255,0,0,0,0,0,0,0
+195,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,oral,Yes,Sedentary,264.9587526,0,0.535914645,0,0,0,0,0,0,0.40831592,0,0,0,0,0,0,0
+196,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,cloacal,Yes,Sedentary,0,0,43.01375304,0,0,0,0,0,0,0,0,0,0,0,2.627407161,0,0
+197,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,cloacal,Yes,Sedentary,344.5608487,0,58.40613437,49.44861263,178.2226521,0,0,145.5735346,0,0,0,0.894647671,0,0,9.807989281,0,0
+198,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,cloacal,Yes,Sedentary,0,0,0,6.698527255,36.33551256,0,0,0,0,0,0,64.63989961,0,0,20.57531714,0,0
+199,Charadriiformes,Southern black-backed gull,Waimakariri River,Mainland,cloacal,Yes,Sedentary,0.92908063,0,159.4921749,6.245486459,0.87746504,0,0,2.07752752,0,0,0,84.15922042,0,0,16.68473965,0,0
+202,Charadriiformes,Southern New Zealand dotterel,Rakiura,Rakiura Region,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+203,Charadriiformes,Southern New Zealand dotterel,Rakiura,Rakiura Region,oral,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+204,Charadriiformes,Southern New Zealand dotterel,Rakiura,Rakiura Region,oral,No,Local migration ,0,0,17.38550688,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+205,Charadriiformes,Southern New Zealand dotterel,Rakiura,Rakiura Region,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+206,Charadriiformes,Southern New Zealand dotterel,Rakiura,Rakiura Region,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,1649.567283,0,0,0,0,0
+207,Charadriiformes,Southern New Zealand dotterel,Rakiura,Rakiura Region,cloacal,No,Local migration ,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

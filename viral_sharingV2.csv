@@ -1,0 +1,23 @@
+﻿lib_number,virus,contig_ID,viral_family,bird_order,bird_species,location,bird_species_location,region,swab_type,raw_abundance,raw_reads,RPM
+3,Calicivirus 2,k141_239487,Caliciviridae,Charadriiformes,Chatham Island oystercatcher,Chathams,Chatham_Island_oystercatcher_Chathams,Chathams,cloacal,"83,497,515",120,1.437168519
+183,Calicivirus 2,k141_105791,Caliciviridae,Charadriiformes,South Island pied oystercatcher,Firth of Thames,South_Island_pied_oystercatcher_Firth_of_Thames,Mainland,cloacal,"44,919,227",3282,73.06448083
+83,Calicivirus 3,k141_60070,Caliciviridae,Sphenisciformes,Erect-crested penguin,Bounties,Erect-crested_penguin_Bounties,Subantartics,cloacal,"53,049,934",52,0.980208571
+99,Calicivirus 3,k141_233348,Caliciviridae,Sphenisciformes,Eastern rockhopper penguin,Campbell,Eastern_rockhopper_penguin_Campbell,Subantartics,cloacal,"70,521,086",1999,28.34613182
+123,Deltacoronavirus sp.,k141_261190,Coronaviridae,Charadriiformes,Southern black-backed gull,Campbell,Southern_black-backed_gull_Campbell,Subantartics,cloacal,275791237,784412,2844.2238
+139,Deltacoronavirus sp.,k141_239409,Coronaviridae,Charadriiformes,Subantarctic skua,Campbell,Subantarctic_skua_Campbell,Subantartics,cloacal,"50,306,859",20,0.397560102
+154,Papillomavirus 4,k141_156229,Papillomaviridae,Procellariiformes,Southern royal albatross,Enderby,Southern_royal_albatross_Enderby,Subantartics,oral,"109,931,986",1374,12.49863711
+64,Papillomavirus 4,k141_126177,Papillomaviridae,Procellariiformes,Antipodean albatross,Antipodes,Antipodean_albatross_Antipodes,Subantartics,oral,"106,134,677",58,0.546475494
+64,Papillomavirus 5,k141_257892,Papillomaviridae,Procellariiformes,Antipodean albatross,Antipodes,Antipodean_albatross_Antipodes,Subantartics,oral,"106,134,677",1059,9.977888754
+132,Papillomavirus 5,k141_353310,Papillomaviridae,Procellariiformes,Southern royal albatross,Campbell,Southern_royal_albatross_Campbell,Subantartics,cloacal,"113,551,667",26,0.228970659
+78,Picornavirus 1,k141_104562,Picornaviridae,Sphenisciformes,Erect-crested penguin,Bounties,Erect-crested_penguin_Bounties,Subantartics,oral,"186,857,075",658198,3522.46764
+96,Picornavirus 1,k141_298968,Picornaviridae,Sphenisciformes,Eastern rockhopper penguin,Campbell,Eastern_rockhopper_penguin_Campbell,Subantartics,oral,124915390,33315,266.7005243
+154,Picornavirus 1,k141_17998,Picornaviridae,Procellariiformes,Southern royal albatross,Enderby,Southern_royal_albatross_Enderby,Subantartics,oral,106235767,13660,128.5819304
+3,Picornavirus 2,k141_232726,Picornaviridae,Charadriiformes,Chatham Island oystercatcher,Chathams,Chatham_Island_oystercatcher_Chathams,Chathams,cloacal,"83,497,515",229,2.742596591
+183,Picornavirus 2,k141_318123,Picornaviridae,Charadriiformes,South Island pied oystercatcher,Firth of Thames,South_Island_pied_oystercatcher_Firth_of_Thames,Mainland,cloacal,"44,919,227",252113,5612.585453
+206,Picornavirus 2,k141_48540,Picornaviridae,Charadriiformes,Southern New Zealand dotterel,Rakiura,Southern_New_Zealand_dotterel_Rakiura,Rakiura Region,cloacal,"117,790,891",46214,392.3393363
+55,Picornavirus 4,k141_256676,Picornaviridae,Charadriiformes,Subantarctic skua,Adams,Subantarctic_skua_Adams,Subantartics,cloacal,"49,564,723",2440,49.22856121
+58,Picornavirus 4,k141_93702,Picornaviridae,Procellariiformes,Northern giant petrel,Adams,Northern_giant_petrel_Adams,Subantartics,oral,"53,371,879",21,0.39346563
+2,Rotavirus A,k141_14404,Sedoreoviridae,Charadriiformes,Chatham Island oystercatcher,Chathams,Chatham_Island_oystercatcher_Chathams,Chathams,oral,"82,738,929",1612,19.48296914
+28,Rotavirus A,k141_326138,Sedoreoviridae,Charadriiformes,Chatham Island snipe,Rangitira,Chatham_Island_snipe_Rangitira,Chathams,cloacal,"45,697,407",1581,34.59714902
+148,Sedoreovirus 1,k141_117810,Sedoreoviridae,Sphenisciformes,Yellow-eyed penguin,Enderby,Yellow-eyed_penguin_Enderby,Subantartics,cloacal,177945233,204729,1150.516912
+78,Sedoreovirus 1,k141_413309,Sedoreoviridae,Sphenisciformes,Erect-crested penguin,Bounties,Erect-crested_penguin_Bounties,Subantartics,oral,"47,877,093",16,0.334189045
